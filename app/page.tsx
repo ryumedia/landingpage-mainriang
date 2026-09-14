@@ -1,4 +1,4 @@
-﻿﻿import {
+﻿import {
   ArrowRight,
   BookOpen,
   Brain,
@@ -11,6 +11,8 @@
   Users,
 } from "lucide-react";
 import Image from "next/image";
+import { existsSync } from "fs";
+import { join } from "path";
 import Navbar from "@/components/Navbar";
 import BranchTabs from "@/components/BranchTabs";
 import RegistrationCard from "@/components/RegistrationCard";
@@ -64,6 +66,8 @@ const principles = [
 
 export default function Home() {
   const year = new Date().getFullYear();
+  const heroImage = "/images/hero.jpg";
+  const heroExists = existsSync(join(process.cwd(), "public", "images", "hero.jpg"));
 
   return (
     <>
@@ -99,7 +103,20 @@ export default function Home() {
             </div>
 
             <div className="reveal lg:pl-8">
-              <div className="placeholder-image relative min-h-[440px] rounded-[2.5rem] border border-white/70 p-6 shadow-[0_30px_80px_rgba(60,34,90,.12)] sm:min-h-[540px]">
+              <div
+                className={`relative min-h-[440px] overflow-hidden rounded-[2.5rem] border border-white/70 shadow-[0_30px_80px_rgba(60,34,90,.12)] sm:min-h-[540px] ${heroExists ? "" : "placeholder-image p-6"
+                  }`}
+              >
+                {heroExists && (
+                  <Image
+                    src={heroImage}
+                    alt="Suasana belajar di Main Riang Preschool"
+                    fill
+                    priority
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                )}
                 <div className="absolute left-6 top-6 rounded-2xl bg-white/85 p-4 shadow-lg backdrop-blur">
                   <p className="text-xs font-black uppercase tracking-[.16em] text-[#7a8984]">Main Riang</p>
                   <p className="mt-1 font-black text-[#28433b]">Ruang tumbuh yang hangat</p>
@@ -108,8 +125,10 @@ export default function Home() {
                   <div className="flex items-center gap-3">
                     <span className="flex size-12 items-center justify-center rounded-2xl bg-[#f1e6fa] text-2xl">🧩</span>
                     <div>
-                      <p className="font-black text-[#28433b]">PLACEHOLDER FOTO HERO</p>
-                      <p className="text-sm text-[#65746f]">Ganti dengan foto aktivitas asli Main Riang.</p>
+                      <p className="font-black text-[#28433b]">Ruang tumbuh yang hangat</p>
+                      {!heroExists && (
+                        <p className="text-sm text-[#65746f]">Ganti dengan foto asli di public/images/hero.jpg</p>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -344,9 +363,8 @@ export default function Home() {
                 return (
                   <div
                     key={item.title}
-                    className={`relative flex min-h-64 items-end overflow-hidden rounded-[1.75rem] ${
-                      isPlaceholder ? "placeholder-image p-5" : ""
-                    } ${i === 0 ? "sm:row-span-2 sm:min-h-full" : ""}`}
+                    className={`relative flex min-h-64 items-end overflow-hidden rounded-[1.75rem] ${isPlaceholder ? "placeholder-image p-5" : ""
+                      } ${i === 0 ? "sm:row-span-2 sm:min-h-full" : ""}`}
                   >
                     {!isPlaceholder && (
                       <Image
