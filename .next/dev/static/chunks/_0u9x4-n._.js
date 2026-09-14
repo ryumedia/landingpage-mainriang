@@ -141,6 +141,30 @@ function BranchTabs() {
                                         fileName: "[project]/components/BranchTabs.tsx",
                                         lineNumber: 73,
                                         columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: branch.pricelistUrl.includes("[") ? "#" : branch.pricelistUrl,
+                                        target: "_blank",
+                                        rel: "noreferrer",
+                                        "aria-label": `Lihat pricelist ${branch.name}`,
+                                        className: `inline-flex items-center gap-2 rounded-full px-5 py-3 font-bold transition ${branch.pricelistUrl.includes("[") ? "cursor-not-allowed bg-slate-200 text-slate-500" : "bg-[#28433b] text-white hover:bg-[#1c332c] hover:-translate-y-0.5"}`,
+                                        onClick: (e)=>{
+                                            if (branch.pricelistUrl.includes("[")) e.preventDefault();
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FileText, {
+                                                className: "size-5"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/BranchTabs.tsx",
+                                                lineNumber: 104,
+                                                columnNumber: 15
+                                            }, this),
+                                            "Pricelist"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/BranchTabs.tsx",
+                                        lineNumber: 90,
+                                        columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
@@ -164,7 +188,7 @@ function BranchTabs() {
                                     children: "🏡"
                                 }, void 0, false, {
                                     fileName: "[project]/components/BranchTabs.tsx",
-                                    lineNumber: 94,
+                                    lineNumber: 112,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -172,7 +196,7 @@ function BranchTabs() {
                                     children: "Foto / peta cabang"
                                 }, void 0, false, {
                                     fileName: "[project]/components/BranchTabs.tsx",
-                                    lineNumber: 97,
+                                    lineNumber: 115,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -180,18 +204,18 @@ function BranchTabs() {
                                     children: "Ganti placeholder ini dengan foto atau Google Maps cabang."
                                 }, void 0, false, {
                                     fileName: "[project]/components/BranchTabs.tsx",
-                                    lineNumber: 98,
+                                    lineNumber: 116,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/BranchTabs.tsx",
-                            lineNumber: 93,
+                            lineNumber: 111,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/BranchTabs.tsx",
-                        lineNumber: 92,
+                        lineNumber: 110,
                         columnNumber: 9
                     }, this)
                 ]
@@ -402,7 +426,8 @@ const branches = [
         name: "Main Riang Preschool Gunung Batu",
         address: "[ALAMAT GUNUNG BATU]",
         whatsapp: "[NOMOR_WA_GUNUNG_BATU]",
-        mapsUrl: "[LINK_GOOGLE_MAPS_GUNUNG_BATU]"
+        mapsUrl: "[LINK_GOOGLE_MAPS_GUNUNG_BATU]",
+        pricelistUrl: "[LINK_PRICELIST_GUNUNG_BATU]"
     },
     {
         id: "arcamanik",
@@ -410,7 +435,8 @@ const branches = [
         name: "Main Riang Preschool Arcamanik",
         address: "[ALAMAT ARCAMANIK]",
         whatsapp: "[NOMOR_WA_ARCAMANIK]",
-        mapsUrl: "[LINK_GOOGLE_MAPS_ARCAMANIK]"
+        mapsUrl: "[LINK_GOOGLE_MAPS_ARCAMANIK]",
+        pricelistUrl: "[LINK_PRICELIST_ARCAMANIK]"
     },
     {
         id: "cileunyi",
@@ -418,7 +444,8 @@ const branches = [
         name: "Main Riang Preschool Cileunyi",
         address: "[ALAMAT CILEUNYI]",
         whatsapp: "[NOMOR_WA_CILEUNYI]",
-        mapsUrl: "[LINK_GOOGLE_MAPS_CILEUNYI]"
+        mapsUrl: "[LINK_GOOGLE_MAPS_CILEUNYI]",
+        pricelistUrl: "[LINK_PRICELIST_CILEUNYI]"
     }
 ];
 const schoolPrograms = [

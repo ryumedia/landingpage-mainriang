@@ -1,7 +1,7 @@
 ﻿"use client";
 
 import { useState } from "react";
-import { ExternalLink, MapPin, MessageCircle } from "lucide-react";
+import { ExternalLink, FileText, MapPin, MessageCircle } from "lucide-react";
 import { branches, whatsappUrl } from "@/lib/data";
 
 export default function BranchTabs() {
@@ -85,6 +85,24 @@ export default function BranchTabs() {
             >
               <ExternalLink className="size-4" />
               Lihat Peta
+            </a>
+
+            <a
+              href={branch.pricelistUrl.includes("[") ? "#" : branch.pricelistUrl}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`Lihat pricelist ${branch.name}`}
+              className={`inline-flex items-center gap-2 rounded-full px-5 py-3 font-bold transition ${
+                branch.pricelistUrl.includes("[")
+                  ? "cursor-not-allowed bg-slate-200 text-slate-500"
+                  : "bg-[#28433b] text-white hover:bg-[#1c332c] hover:-translate-y-0.5"
+              }`}
+              onClick={(e) => {
+                if (branch.pricelistUrl.includes("[")) e.preventDefault();
+              }}
+            >
+              <FileText className="size-5" />
+              Pricelist
             </a>
           </div>
         </div>

@@ -1,4 +1,4 @@
-﻿import {
+﻿﻿import {
   ArrowRight,
   BookOpen,
   Brain,
@@ -10,10 +10,12 @@
   Star,
   Users,
 } from "lucide-react";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import BranchTabs from "@/components/BranchTabs";
-import WhatsAppFloat from "@/components/WhatsAppFloat";
-import { gallery, schoolPrograms, trilogi } from "@/lib/data";
+import RegistrationCard from "@/components/RegistrationCard";
+import PendaftaranFloat from "@/components/PendaftaranFloat";
+import { gallery, registrations, schoolPrograms, testimonials, trilogi } from "@/lib/data";
 
 const reasons = [
   {
@@ -82,8 +84,8 @@ export default function Home() {
                 Main Riang Preschool menghadirkan pengalaman belajar anak usia dini melalui pendekatan Islamic Montessori yang menumbuhkan kemandirian, karakter, kreativitas, dan kecintaan kepada Allah.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <a href="#about" className="inline-flex items-center justify-center gap-2 rounded-full bg-[#702fa0] px-6 py-3.5 font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#53217a]">
-                  Kenali Main Riang <ArrowRight className="size-4" />
+                <a href="#pendaftaran" className="inline-flex items-center justify-center gap-2 rounded-full bg-[#702fa0] px-6 py-3.5 font-bold text-white transition hover:-translate-y-0.5 hover:bg-[#53217a]">
+                  Pendaftaran <ArrowRight className="size-4" />
                 </a>
                 <a href="#cabang" className="inline-flex items-center justify-center rounded-full border border-[#e2d3f2] bg-white px-6 py-3.5 font-bold text-[#702fa0] transition hover:-translate-y-0.5 hover:bg-[#faf5ff]">
                   Hubungi Kami via WhatsApp
@@ -281,6 +283,52 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="testimoni" className="bg-[#f3f8f5] py-20 sm:py-28">
+          <div className="container-page">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Testimoni</p>
+              <h2 className="mt-3 text-4xl font-black tracking-tight text-[#28433b] sm:text-5xl">Kata Orang Tua Main Riang</h2>
+              <p className="mt-4 text-[#65746f]">Cerita dan pengalaman orang tua yang telah mempercayakan putra-putrinya tumbuh dan belajar di Main Riang.</p>
+            </div>
+            <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+              {testimonials.map((item) => (
+                <figure
+                  key={item.parentName}
+                  className="flex flex-col rounded-[2rem] border border-[#e7e5dc] bg-white p-7 transition hover:-translate-y-1 hover:shadow-lg"
+                >
+                  <div className="flex flex-col items-center text-center">
+                    {item.photo.includes("[") ? (
+                      <span className="flex size-20 items-center justify-center rounded-full bg-[#f1e6fa] text-3xl text-[#702fa0]">
+                        {item.parentName.replace(/\[|\]/g, "").trim().charAt(0).toUpperCase() || "👤"}
+                      </span>
+                    ) : (
+                      <Image
+                        src={item.photo}
+                        alt={`Foto ${item.parentName}`}
+                        width={80}
+                        height={80}
+                        className="size-20 rounded-full border-4 border-[#f1e6fa] object-cover"
+                      />
+                    )}
+                    <figcaption className="mt-4">
+                      <p className="font-black text-[#28433b]">{item.parentName}</p>
+                      <p className="mt-1 text-sm font-semibold text-[#702fa0]">Orang tua dari {item.childName}</p>
+                    </figcaption>
+                  </div>
+                  <blockquote className="mt-5 flex-1 border-t border-[#f0ede4] pt-5 text-sm leading-7 text-[#65746f]">
+                    “{item.message}”
+                  </blockquote>
+                  <div className="mt-5 flex gap-1 text-[#ff9302]">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <Star key={i} className="size-4 fill-current" />
+                    ))}
+                  </div>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section id="gallery" className="bg-white py-20 sm:py-28">
           <div className="container-page">
             <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
@@ -291,13 +339,49 @@ export default function Home() {
               <p className="max-w-md text-[#65746f]">Ganti setiap placeholder dengan foto asli sekolah pada folder <code className="rounded bg-[#f5f2e9] px-1">public/images</code>.</p>
             </div>
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {gallery.map((item, i) => (
-                <div key={item} className={`placeholder-image flex min-h-64 items-end rounded-[1.75rem] p-5 ${i === 0 ? "sm:row-span-2 sm:min-h-full" : ""}`}>
-                  <div className="relative z-10 w-full rounded-2xl bg-white/85 p-4 backdrop-blur">
-                    <p className="font-black text-[#28433b]">{item}</p>
-                    <p className="mt-1 text-xs text-[#65746f]">PLACEHOLDER FOTO</p>
+              {gallery.map((item, i) => {
+                const isPlaceholder = item.photo.includes("[");
+                return (
+                  <div
+                    key={item.title}
+                    className={`relative flex min-h-64 items-end overflow-hidden rounded-[1.75rem] ${
+                      isPlaceholder ? "placeholder-image p-5" : ""
+                    } ${i === 0 ? "sm:row-span-2 sm:min-h-full" : ""}`}
+                  >
+                    {!isPlaceholder && (
+                      <Image
+                        src={item.photo}
+                        alt={item.title}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-cover transition duration-500 hover:scale-105"
+                      />
+                    )}
+                    <div className="relative z-10 w-full rounded-2xl bg-white/85 p-4 backdrop-blur">
+                      <p className="font-black text-[#28433b]">{item.title}</p>
+                      {isPlaceholder && (
+                        <p className="mt-1 text-xs text-[#65746f]">PLACEHOLDER FOTO</p>
+                      )}
+                    </div>
                   </div>
-                </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        <section id="pendaftaran" className="bg-white py-20 sm:py-28">
+          <div className="container-page">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Pendaftaran</p>
+              <h2 className="mt-3 text-4xl font-black tracking-tight text-[#28433b] sm:text-5xl">
+                Bergabung, dan Jadilah Bagian dari <span className="text-[#702fa0]">Keluarga Main Riang</span>
+              </h2>
+              <p className="mt-4 text-[#65746f]">Pilih jenis pendaftaran yang sesuai untuk memulai perjalanan belajar putra-putri Anda.</p>
+            </div>
+            <div className="mt-10 grid gap-5 md:grid-cols-3">
+              {registrations.map((item) => (
+                <RegistrationCard key={item.title} item={item} />
               ))}
             </div>
           </div>
@@ -362,6 +446,7 @@ export default function Home() {
               <a href="#visi-misi" className="hover:text-[#702fa0]">Visi & Misi</a>
               <a href="#trilogi" className="hover:text-[#702fa0]">Trilogi</a>
               <a href="#school-program" className="hover:text-[#702fa0]">School Program</a>
+              <a href="#pendaftaran" className="hover:text-[#702fa0]">Pendaftaran</a>
               <a href="#cabang" className="hover:text-[#702fa0]">Cabang</a>
             </div>
           </div>
@@ -379,7 +464,7 @@ export default function Home() {
         </div>
       </footer>
 
-      <WhatsAppFloat />
+      <PendaftaranFloat />
     </>
   );
 }
