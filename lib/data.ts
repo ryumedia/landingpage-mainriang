@@ -6,6 +6,7 @@ export type Branch = {
   whatsapp: string;
   mapsUrl: string;
   pricelistUrl: string;
+  photo: string;
 };
 
 export const branches: Branch[] = [
@@ -13,28 +14,31 @@ export const branches: Branch[] = [
     id: "gunungBatu",
     shortName: "Gunung Batu",
     name: "Main Riang Preschool Gunung Batu",
-    address: "[ALAMAT GUNUNG BATU]",
-    whatsapp: "[NOMOR_WA_GUNUNG_BATU]",
-    mapsUrl: "[LINK_GOOGLE_MAPS_GUNUNG_BATU]",
-    pricelistUrl: "[LINK_PRICELIST_GUNUNG_BATU]"
+    address: "Jl. Babakan Radio, Sukaraja, Kec. Cicendo, Kota Bandung, Jawa Barat 40175",
+    whatsapp: "6285710905799",
+    mapsUrl: "https://maps.app.goo.gl/aSnTgEyDJf1irViDA",
+    pricelistUrl: "[LINK_PRICELIST_GUNUNG_BATU]",
+    photo: "/images/cabang-gunung-batu.jpg"
   },
   {
     id: "arcamanik",
     shortName: "Arcamanik",
     name: "Main Riang Preschool Arcamanik",
-    address: "[ALAMAT ARCAMANIK]",
-    whatsapp: "[NOMOR_WA_ARCAMANIK]",
-    mapsUrl: "[LINK_GOOGLE_MAPS_ARCAMANIK]",
-    pricelistUrl: "[LINK_PRICELIST_ARCAMANIK]"
+    address: "Jl. Cicukang, Cisaranten Bina Harapan, Kec. Arcamanik, Kota Bandung, Jawa Barat 40294",
+    whatsapp: "6285520925820",
+    mapsUrl: "https://maps.app.goo.gl/nhQPtzMfDTwDCLFq6",
+    pricelistUrl: "[LINK_PRICELIST_ARCAMANIK]",
+    photo: "/images/cabang-arcamanik.jpg"
   },
   {
     id: "cileunyi",
     shortName: "Cileunyi",
     name: "Main Riang Preschool Cileunyi",
-    address: "[ALAMAT CILEUNYI]",
-    whatsapp: "[NOMOR_WA_CILEUNYI]",
-    mapsUrl: "[LINK_GOOGLE_MAPS_CILEUNYI]",
-    pricelistUrl: "[LINK_PRICELIST_CILEUNYI]"
+    address: "Komplek Bumi Sanggar Mebel 2 Blok A 11-12, Cileunyi Kulon, Kec. Cileunyi, Kabupaten Bandung, Jawa Barat 40622",
+    whatsapp: "628131274868",
+    mapsUrl: "https://maps.app.goo.gl/efinqovsNzHuGPzp7",
+    pricelistUrl: "[LINK_PRICELIST_CILEUNYI]",
+    photo: "/images/cabang-cileunyi.jpg"
   }
 ];
 
@@ -43,19 +47,19 @@ export const registrations = [
     title: "Siswa Baru",
     description: "Daftarkan putra-putri Anda sebagai siswa baru di Main Riang Preschool.",
     icon: "UserPlus",
-    url: "https://mainriang.id/siswa-baru"
+    url: "https://mainriang.app/siswa-baru"
   },
   {
     title: "Trial Class",
     description: "Ikuti kelas percobaan agar anak mengenal suasana belajar di Main Riang.",
     icon: "FlaskConical",
-    url: "https://mainriang.id/trial-class"
+    url: "https://mainriang.app/trial-class"
   },
   {
     title: "Kelas Tematik",
     description: "Jelajahi berbagai kelas tematik seru yang memperkaya pengalaman belajar anak.",
     icon: "Palette",
-    url: "https://mainriang.id/tematik"
+    url: "https://mainriang.app/tematik"
   }
 ];
 

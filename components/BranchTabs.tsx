@@ -107,16 +107,12 @@ export default function BranchTabs() {
           </div>
         </div>
 
-        <div className="placeholder-image flex min-h-56 items-center justify-center rounded-[1.5rem] p-8 text-center">
-          <div className="relative z-10">
-            <div className="mx-auto flex size-16 items-center justify-center rounded-2xl bg-white/75 text-3xl shadow-sm">
-              🏡
-            </div>
-            <p className="mt-4 font-bold text-[#28433b]">Foto / peta cabang</p>
-            <p className="mt-1 text-sm text-[#65746f]">
-              Ganti placeholder ini dengan foto atau Google Maps cabang.
-            </p>
-          </div>
+        <div className="overflow-hidden rounded-[1.5rem]">
+          <img
+            src={branch.photo}
+            alt={`Foto ${branch.name}`}
+            className="aspect-[4/3] w-full object-cover"
+          />
         </div>
       </div>
     </div>

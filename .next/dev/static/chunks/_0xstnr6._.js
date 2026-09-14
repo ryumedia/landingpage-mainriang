@@ -180,36 +180,12 @@ function BranchTabs() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "placeholder-image flex min-h-56 items-center justify-center rounded-[1.5rem] p-8 text-center",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "relative z-10",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "mx-auto flex size-16 items-center justify-center rounded-2xl bg-white/75 text-3xl shadow-sm",
-                                    children: "🏡"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/BranchTabs.tsx",
-                                    lineNumber: 112,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "mt-4 font-bold text-[#28433b]",
-                                    children: "Foto / peta cabang"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/BranchTabs.tsx",
-                                    lineNumber: 115,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "mt-1 text-sm text-[#65746f]",
-                                    children: "Ganti placeholder ini dengan foto atau Google Maps cabang."
-                                }, void 0, false, {
-                                    fileName: "[project]/components/BranchTabs.tsx",
-                                    lineNumber: 116,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                        className: "overflow-hidden rounded-[1.5rem]",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                            src: branch.photo,
+                            alt: `Foto ${branch.name}`,
+                            className: "aspect-[4/3] w-full object-cover"
+                        }, void 0, false, {
                             fileName: "[project]/components/BranchTabs.tsx",
                             lineNumber: 111,
                             columnNumber: 11
@@ -359,7 +335,7 @@ __turbopack_context__.s([
     ()=>PendaftaranFloat
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CircleCheckBig$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check-big.js [app-client] (ecmascript) <export default as CircleCheckBig>");
 "use client";
 ;
 ;
@@ -369,7 +345,7 @@ function PendaftaranFloat() {
         "aria-label": "Menuju halaman Pendaftaran",
         className: "fixed bottom-5 right-5 z-40 flex items-center gap-2 rounded-full bg-[#702fa0] px-4 py-3 font-bold text-white shadow-2xl transition hover:-translate-y-1 hover:bg-[#53217a] sm:bottom-7 sm:right-7",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CircleCheckBig$3e$__["CircleCheckBig"], {
                 className: "size-5"
             }, void 0, false, {
                 fileName: "[project]/components/PendaftaranFloat.tsx",
@@ -517,28 +493,31 @@ const branches = [
         id: "gunungBatu",
         shortName: "Gunung Batu",
         name: "Main Riang Preschool Gunung Batu",
-        address: "[ALAMAT GUNUNG BATU]",
-        whatsapp: "[NOMOR_WA_GUNUNG_BATU]",
-        mapsUrl: "[LINK_GOOGLE_MAPS_GUNUNG_BATU]",
-        pricelistUrl: "[LINK_PRICELIST_GUNUNG_BATU]"
+        address: "Jl. Babakan Radio, Sukaraja, Kec. Cicendo, Kota Bandung, Jawa Barat 40175",
+        whatsapp: "6285710905799",
+        mapsUrl: "https://maps.app.goo.gl/aSnTgEyDJf1irViDA",
+        pricelistUrl: "[LINK_PRICELIST_GUNUNG_BATU]",
+        photo: "/images/cabang-gunung-batu.jpg"
     },
     {
         id: "arcamanik",
         shortName: "Arcamanik",
         name: "Main Riang Preschool Arcamanik",
-        address: "[ALAMAT ARCAMANIK]",
-        whatsapp: "[NOMOR_WA_ARCAMANIK]",
-        mapsUrl: "[LINK_GOOGLE_MAPS_ARCAMANIK]",
-        pricelistUrl: "[LINK_PRICELIST_ARCAMANIK]"
+        address: "Jl. Cicukang, Cisaranten Bina Harapan, Kec. Arcamanik, Kota Bandung, Jawa Barat 40294",
+        whatsapp: "6285520925820",
+        mapsUrl: "https://maps.app.goo.gl/nhQPtzMfDTwDCLFq6",
+        pricelistUrl: "[LINK_PRICELIST_ARCAMANIK]",
+        photo: "/images/cabang-arcamanik.jpg"
     },
     {
         id: "cileunyi",
         shortName: "Cileunyi",
         name: "Main Riang Preschool Cileunyi",
-        address: "[ALAMAT CILEUNYI]",
-        whatsapp: "[NOMOR_WA_CILEUNYI]",
-        mapsUrl: "[LINK_GOOGLE_MAPS_CILEUNYI]",
-        pricelistUrl: "[LINK_PRICELIST_CILEUNYI]"
+        address: "Komplek Bumi Sanggar Mebel 2 Blok A 11-12, Cileunyi Kulon, Kec. Cileunyi, Kabupaten Bandung, Jawa Barat 40622",
+        whatsapp: "628131274868",
+        mapsUrl: "https://maps.app.goo.gl/efinqovsNzHuGPzp7",
+        pricelistUrl: "[LINK_PRICELIST_CILEUNYI]",
+        photo: "/images/cabang-cileunyi.jpg"
     }
 ];
 const registrations = [
@@ -546,19 +525,19 @@ const registrations = [
         title: "Siswa Baru",
         description: "Daftarkan putra-putri Anda sebagai siswa baru di Main Riang Preschool.",
         icon: "UserPlus",
-        url: "https://mainriang.id/siswa-baru"
+        url: "https://mainriang.app/siswa-baru"
     },
     {
         title: "Trial Class",
         description: "Ikuti kelas percobaan agar anak mengenal suasana belajar di Main Riang.",
         icon: "FlaskConical",
-        url: "https://mainriang.id/trial-class"
+        url: "https://mainriang.app/trial-class"
     },
     {
         title: "Kelas Tematik",
         description: "Jelajahi berbagai kelas tematik seru yang memperkaya pengalaman belajar anak.",
         icon: "Palette",
-        url: "https://mainriang.id/tematik"
+        url: "https://mainriang.app/tematik"
     }
 ];
 const schoolPrograms = [
