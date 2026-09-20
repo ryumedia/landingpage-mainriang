@@ -393,12 +393,20 @@
     right: calc(var(--spacing) * 5);
   }
 
+  .right-6 {
+    right: calc(var(--spacing) * 6);
+  }
+
   .right-7 {
     right: calc(var(--spacing) * 7);
   }
 
   .bottom-5 {
     bottom: calc(var(--spacing) * 5);
+  }
+
+  .bottom-6 {
+    bottom: calc(var(--spacing) * 6);
   }
 
   .bottom-7 {
@@ -536,11 +544,6 @@
     height: calc(var(--spacing) * 12);
   }
 
-  .size-16 {
-    width: calc(var(--spacing) * 16);
-    height: calc(var(--spacing) * 16);
-  }
-
   .size-20 {
     width: calc(var(--spacing) * 20);
     height: calc(var(--spacing) * 20);
@@ -554,12 +557,12 @@
     height: 72px;
   }
 
-  .min-h-56 {
-    min-height: calc(var(--spacing) * 56);
-  }
-
   .min-h-64 {
     min-height: calc(var(--spacing) * 64);
+  }
+
+  .min-h-\[320px\] {
+    min-height: 320px;
   }
 
   .min-h-\[440px\] {
@@ -868,16 +871,6 @@
   @supports (color: color-mix(in lab, red, red)) {
     .bg-white\/10 {
       background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
-    }
-  }
-
-  .bg-white\/75 {
-    background-color: #ffffffbf;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-white\/75 {
-      background-color: color-mix(in oklab, var(--color-white) 75%, transparent);
     }
   }
 
@@ -1349,6 +1342,10 @@
       display: inline-flex;
     }
 
+    .sm\:min-h-\[420px\] {
+      min-height: 420px;
+    }
+
     .sm\:min-h-\[540px\] {
       min-height: 540px;
     }
@@ -1375,6 +1372,10 @@
 
     .sm\:p-12 {
       padding: calc(var(--spacing) * 12);
+    }
+
+    .sm\:py-12 {
+      padding-block: calc(var(--spacing) * 12);
     }
 
     .sm\:py-28 {
@@ -1445,6 +1446,18 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:order-1 {
+      order: 1;
+    }
+
+    .lg\:order-2 {
+      order: 2;
+    }
+
+    .lg\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .lg\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }

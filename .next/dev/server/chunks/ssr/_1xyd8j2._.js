@@ -445,6 +445,8 @@ function RegistrationCard({ item }) {
 __turbopack_context__.s([
     "branches",
     ()=>branches,
+    "coreApproaches",
+    ()=>coreApproaches,
     "gallery",
     ()=>gallery,
     "registrations",
@@ -574,18 +576,55 @@ const testimonials = [
 const trilogi = [
     {
         number: "01",
-        title: "[TRILOGI 1]",
-        description: "[DESKRIPSI TRILOGI 1]"
+        title: "ISLAMIC BEHAVIOUR",
+        description: "Membentuk karakter anak yang saleh, berakhlak mulia, serta menanamkan kesadaran dan kecintaan mendalam terhadap ajaran agama Islam sejak dini."
     },
     {
         number: "02",
-        title: "[TRILOGI 2]",
-        description: "[DESKRIPSI TRILOGI 2]"
+        title: "5 AREA MONTESSORI",
+        description: "Mengembangkan potensi anak secara holistik terstruktur berdasarkan area Practical Life, Sensorial, Language, Mathematics, dan Cultural Studies."
     },
     {
         number: "03",
-        title: "[TRILOGI 3]",
-        description: "[DESKRIPSI TRILOGI 3]"
+        title: "GEMBIRA BERAKSI",
+        description: "Mengasah kreativitas, imajinasi, kemandirian, serta kecerdasan sosial-emosional melalui ekspresi seni, prakarya, musik, dan gerak aktif."
+    }
+];
+const coreApproaches = [
+    {
+        icon: "Heart",
+        title: "Islamic Behaviour",
+        description: "Pembiasaan nilai-nilai Islam dalam kegiatan sehari-hari untuk membentuk adab, akhlak mulia, dan karakter anak.",
+        details: [
+            "Pembiasaan ibadah & doa harian",
+            "Adab dan akhlak mulia",
+            "Keteladanan nilai Islam"
+        ],
+        image: "/images/approach-islamic-behaviour.jpg"
+    },
+    {
+        icon: "Brain",
+        title: "5 Area Montessori",
+        description: "Pembelajaran melalui lima area Montessori yang menumbuhkan kemandirian, konsentrasi, dan kecintaan belajar.",
+        details: [
+            "Practical Life",
+            "Sensorial",
+            "Language",
+            "Mathematics",
+            "Cultural"
+        ],
+        image: "/images/approach-5-area-montessori.jpg"
+    },
+    {
+        icon: "Lightbulb",
+        title: "Gembira Beraksi",
+        description: "Proyek kreatif dan kegiatan bermakna yang membuat anak belajar sambil bermain dengan gembira dan percaya diri.",
+        details: [
+            "Project-based learning",
+            "Kreativitas & eksplorasi",
+            "Belajar penuh kegembiraan"
+        ],
+        image: "/images/approach-gembira-beraksi.jpg"
     }
 ];
 const gallery = [

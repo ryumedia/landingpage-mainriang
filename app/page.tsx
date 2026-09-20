@@ -1,10 +1,8 @@
-﻿import {
+﻿﻿import {
   ArrowRight,
-  BookOpen,
   Brain,
   Check,
   Heart,
-  Leaf,
   Lightbulb,
   Sparkles,
   Star,
@@ -13,11 +11,18 @@
 import Image from "next/image";
 import { existsSync } from "fs";
 import { join } from "path";
+import type { LucideIcon } from "lucide-react";
+
+const approachIcons: Record<string, LucideIcon> = {
+  Heart,
+  Brain,
+  Lightbulb,
+};
 import Navbar from "@/components/Navbar";
 import BranchTabs from "@/components/BranchTabs";
 import RegistrationCard from "@/components/RegistrationCard";
 import PendaftaranFloat from "@/components/PendaftaranFloat";
-import { gallery, registrations, schoolPrograms, testimonials, trilogi } from "@/lib/data";
+import { coreApproaches, gallery, registrations, schoolPrograms, testimonials, trilogi } from "@/lib/data";
 
 const reasons = [
   {
@@ -56,14 +61,6 @@ function SmileIcon(props: React.ComponentProps<typeof Sparkles>) {
   return <Sparkles {...props} />;
 }
 
-const principles = [
-  ["Independence", "Anak belajar melakukan sesuatu secara mandiri."],
-  ["Practical Life", "Anak belajar keterampilan kehidupan sehari-hari."],
-  ["Prepared Environment", "Lingkungan disiapkan agar anak dapat belajar secara aktif."],
-  ["Islamic Character", "Pembelajaran diarahkan untuk membangun adab, akhlak, dan nilai-nilai Islam."],
-  ["Love of Learning", "Anak dibangun menjadi pembelajar yang menikmati proses belajar."]
-];
-
 export default function Home() {
   const year = new Date().getFullYear();
   const heroImage = "/images/hero.jpg";
@@ -73,6 +70,36 @@ export default function Home() {
     <>
       <Navbar />
       <main>
+        <section id="pendaftaran" className="bg-white py-20 sm:py-12">
+          <div className="container-page">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Pendaftaran</p>
+              <h2 className="mt-3 text-4xl font-black tracking-tight text-[#28433b] sm:text-5xl">
+                Bergabung, dan Jadilah Bagian dari <span className="text-[#702fa0]">Keluarga Main Riang</span>
+              </h2>
+              <p className="mt-4 text-[#65746f]">Pilih jenis pendaftaran yang sesuai untuk memulai perjalanan belajar putra-putri Anda.</p>
+            </div>
+            <div className="mt-10 grid gap-5 md:grid-cols-3">
+              {registrations.map((item) => (
+                <RegistrationCard key={item.title} item={item} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="cabang" className="bg-[#f3f8f5] py-20 sm:py-12">
+          <div className="container-page">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Our Branches</p>
+              <h2 className="mt-3 text-4xl font-black tracking-tight text-[#28433b] sm:text-5xl">Temukan Main Riang Terdekat</h2>
+              <p className="mt-4 text-[#65746f]">Pilih cabang untuk melihat informasi dan menghubungi sekolah melalui WhatsApp.</p>
+            </div>
+            <div className="mt-10">
+              <BranchTabs />
+            </div>
+          </div>
+        </section>
+
         <section className="soft-grid relative overflow-hidden">
           <div className="container-page grid min-h-[calc(100svh-72px)] items-center gap-10 py-14 lg:grid-cols-[1.02fr_.98fr] lg:py-20">
             <div className="reveal">
@@ -125,7 +152,7 @@ export default function Home() {
                   <div className="flex items-center gap-3">
                     <span className="flex size-12 items-center justify-center rounded-2xl bg-[#f1e6fa] text-2xl">🧩</span>
                     <div>
-                      <p className="font-black text-[#28433b]">Ruang tumbuh yang hangat</p>
+                      <p className="font-black text-[#28433b]">Bermain Penuh Makna</p>
                       {!heroExists && (
                         <p className="text-sm text-[#65746f]">Ganti dengan foto asli di public/images/hero.jpg</p>
                       )}
@@ -138,16 +165,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="bg-white py-20 sm:py-28">
+        <section id="about" className="bg-white py-20 sm:py-12">
           <div className="container-page grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
             <div>
               <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">About Main Riang</p>
               <h2 className="mt-3 text-4xl font-black tracking-tight text-[#28433b] sm:text-5xl">Tentang Main Riang</h2>
               <p className="mt-6 leading-8 text-[#65746f]">
-                Main Riang Preschool adalah ruang belajar anak usia dini yang berfokus pada perkembangan anak secara menyeluruh. Di sini, proses belajar dirancang agar anak dapat bereksplorasi, bermain, membangun kemandirian, dan tumbuh dalam lingkungan yang hangat.
+                Main Riang Islamic Preschool adalah lembaga pendidikan anak usia dini yang menghadirkan pengalaman belajar penuh makna melalui harmoni iman, ilmu, dan kebaikan. Dengan pendekatan Islamic Behaviour, 5 Basic Area Montessori, dan Project Gembira Beraksi, kami mendampingi anak bertumbuh menjadi pribadi yang berkarakter, mandiri, dan cinta belajar.
               </p>
               <p className="mt-4 leading-8 text-[#65746f]">
-                Perpaduan nilai-nilai Islam dan pendekatan Montessori menjadi bagian penting dari pengalaman belajar yang ingin dihadirkan Main Riang.
+                Didukung guru berpengalaman, lingkungan yang nyaman, serta program kreatif berbasis 7 Habits, Main Riang menjadi mitra terpercaya orang tua dalam mendampingi tumbuh kembang anak.
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
@@ -167,22 +194,22 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="visi-misi" className="islamic-pattern py-20 sm:py-28">
+        <section id="visi-misi" className="islamic-pattern py-20 sm:py-12">
           <div className="container-page">
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Identity</p>
               <h2 className="mt-3 text-4xl font-black tracking-tight text-[#28433b] sm:text-5xl">Visi & Misi Main Riang</h2>
-              <p className="mt-4 text-[#65746f]">Silakan ganti placeholder berikut dengan rumusan resmi Main Riang.</p>
             </div>
             <div className="mt-12 grid gap-6 lg:grid-cols-[.8fr_1.2fr]">
               <div className="rounded-[2rem] bg-[#702fa0] p-8 text-white shadow-xl">
-                <p className="text-sm font-black uppercase tracking-[.16em] text-[#f1e6fa]">Visi</p>
-                <h3 className="mt-4 text-3xl font-black">[ISI VISI RESMI MAIN RIANG]</h3>
+                <p className="text-2xl font-black uppercase tracking-[.16em] text-[#f1e6fa]">Visi</p>
+                <h3 className="mt-4 text-3xl font-black">Harmoni Iman, Ilmu, & Kebaikan</h3>
+                <h1 className="mt-4 text-xl font-black">"Mengembangkan potensi insani anak secara holistik melalui keselarasan pemahaman nilai spiritual, keunggulan intelektual, dan pembentukan karakter mulia."</h1>
               </div>
               <div className="rounded-[2rem] border border-[#e7e5dc] bg-white p-8">
-                <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Misi</p>
+                <p className="text-2xl font-black uppercase tracking-[.16em] text-[#702fa0]">Misi</p>
                 <div className="mt-6 space-y-4">
-                  {["[MISI RESMI 1]", "[MISI RESMI 2]", "[MISI RESMI 3]", "[MISI RESMI 4]"].map((m, i) => (
+                  {["Mengembangkan potensi anak secara holistik melalui pendekatan Montessori dan nilai-nilai Islam.", "Menciptakan lingkungan belajaryang menyenangkan, interaktif, dan mendukung kreativitas anak.", "Mengembangkan kemampuan anak untuk berpikir kritis, berani berimaginasi, dan memiliki rasa ingin tahu yang tinggi.", "Membentuk karakter anak yang berakhlak mulia, peduli, dan menghormati perbedaan.", "Meningkatkan kesadaran dan kecintaan terhadap islam."].map((m, i) => (
                     <div key={m} className="flex gap-4 rounded-2xl bg-[#fffaf1] p-4">
                       <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-[#f1e6fa] text-sm font-black text-[#702fa0]">{i + 1}</span>
                       <p className="font-semibold text-[#52645e]">{m}</p>
@@ -194,14 +221,13 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="trilogi" className="bg-white py-20 sm:py-28">
+        <section id="trilogi" className="bg-white py-20 sm:py-12">
           <div className="container-page">
             <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
               <div>
                 <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Our Philosophy</p>
                 <h2 className="mt-3 text-4xl font-black tracking-tight text-[#28433b] sm:text-5xl">Trilogi Main Riang</h2>
               </div>
-              <p className="max-w-xl text-[#65746f]">Tiga elemen berikut sengaja menggunakan placeholder agar filosofi resmi Main Riang tidak terkarang.</p>
             </div>
             <div className="mt-10 grid gap-5 md:grid-cols-3">
               {trilogi.map((item) => (
@@ -216,35 +242,54 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="islamic-montessori" className="bg-[#f3f8f5] py-20 sm:py-28">
-          <div className="container-page grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
-            <div>
-              <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Core Approach</p>
-              <h2 className="mt-3 text-4xl font-black tracking-tight text-[#28433b] sm:text-5xl">Islamic Montessori</h2>
-              <p className="mt-6 leading-8 text-[#65746f]">
-                Pendekatan Montessori membantu anak belajar melalui lingkungan yang dipersiapkan, aktivitas nyata, eksplorasi, dan kesempatan untuk membangun kemandirian. Di Main Riang, nilai-nilai Islam menjadi bagian dari pembentukan karakter dan kebiasaan baik.
-              </p>
-              <div className="mt-7 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-bold text-[#702fa0] shadow-sm">
-                <Leaf className="size-4" /> Independence + Character + Joy
-              </div>
-            </div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              {principles.map(([title, text], i) => (
-                <div key={title} className={`rounded-3xl border border-[#dce8e2] bg-white p-6 ${i === 4 ? "sm:col-span-2" : ""}`}>
+        {coreApproaches.map((approach, i) => {
+          const Icon = approachIcons[approach.icon];
+          const imageExists = existsSync(join(process.cwd(), "public", approach.image.replace(/^\//, "")));
+          return (
+            <section
+              key={approach.title}
+              id={`core-approach-${i + 1}`}
+              className={`${i % 2 === 0 ? "bg-white" : "bg-[#f3f8f5]"} py-20 sm:py-12`}
+            >
+              <div className="container-page grid gap-12 lg:grid-cols-2 lg:items-center">
+                <div className={i % 2 === 1 ? "lg:order-2" : ""}>
                   <div className="flex items-center gap-3">
-                    <span className="flex size-10 items-center justify-center rounded-xl bg-[#f1e6fa] text-[#702fa0]">
-                      {i % 2 === 0 ? <BookOpen className="size-5" /> : <Brain className="size-5" />}
+                    <span className="flex size-12 items-center justify-center rounded-2xl bg-[#f1e6fa] text-[#702fa0]">
+                      <Icon className="size-6" />
                     </span>
-                    <h3 className="font-black text-[#28433b]">{title}</h3>
+                    <span className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Core Approach {i + 1}</span>
                   </div>
-                  <p className="mt-4 text-sm leading-6 text-[#65746f]">{text}</p>
+                  <h2 className="mt-5 text-4xl font-black tracking-tight text-[#28433b] sm:text-5xl">{approach.title}</h2>
+                  <p className="mt-5 leading-8 text-[#65746f]">{approach.description}</p>
+                  <ul className="mt-6 space-y-3">
+                    {approach.details.map((detail) => (
+                      <li key={detail} className="flex gap-3 text-sm font-semibold text-[#52645e]">
+                        <Check className="mt-0.5 size-4 shrink-0 text-[#702fa0]" /> {detail}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-              ))}
-            </div>
-          </div>
-        </section>
+                <div className={i % 2 === 1 ? "lg:order-1" : ""}>
+                  <div
+                    className={`relative min-h-[320px] overflow-hidden rounded-[2.5rem] border border-white/70 shadow-[0_30px_80px_rgba(60,34,90,.12)] sm:min-h-[420px] ${imageExists ? "" : "placeholder-image p-6"}`}
+                  >
+                    {imageExists && (
+                      <Image
+                        src={approach.image}
+                        alt={approach.title}
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        className="object-cover"
+                      />
+                    )}
+                  </div>
+                </div>
+              </div>
+            </section>
+          );
+        })}
 
-        <section id="school-program" className="bg-white py-20 sm:py-28">
+        <section id="school-program" className="bg-white py-20 sm:py-12">
           <div className="container-page">
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Learning Journey</p>
@@ -281,7 +326,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-[#fffaf1] py-20 sm:py-28">
+        <section className="bg-[#fffaf1] py-20 sm:py-12">
           <div className="container-page">
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Why Main Riang?</p>
@@ -302,7 +347,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="testimoni" className="bg-[#f3f8f5] py-20 sm:py-28">
+        <section id="testimoni" className="bg-[#f3f8f5] py-20 sm:py-12">
           <div className="container-page">
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Testimoni</p>
@@ -348,7 +393,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="gallery" className="bg-white py-20 sm:py-28">
+        <section id="gallery" className="bg-white py-20 sm:py-12">
           <div className="container-page">
             <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
               <div>
@@ -388,37 +433,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="pendaftaran" className="bg-white py-20 sm:py-28">
-          <div className="container-page">
-            <div className="mx-auto max-w-3xl text-center">
-              <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Pendaftaran</p>
-              <h2 className="mt-3 text-4xl font-black tracking-tight text-[#28433b] sm:text-5xl">
-                Bergabung, dan Jadilah Bagian dari <span className="text-[#702fa0]">Keluarga Main Riang</span>
-              </h2>
-              <p className="mt-4 text-[#65746f]">Pilih jenis pendaftaran yang sesuai untuk memulai perjalanan belajar putra-putri Anda.</p>
-            </div>
-            <div className="mt-10 grid gap-5 md:grid-cols-3">
-              {registrations.map((item) => (
-                <RegistrationCard key={item.title} item={item} />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="cabang" className="bg-[#f3f8f5] py-20 sm:py-28">
-          <div className="container-page">
-            <div className="mx-auto max-w-3xl text-center">
-              <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Our Branches</p>
-              <h2 className="mt-3 text-4xl font-black tracking-tight text-[#28433b] sm:text-5xl">Temukan Main Riang Terdekat</h2>
-              <p className="mt-4 text-[#65746f]">Pilih cabang untuk melihat informasi dan menghubungi sekolah melalui WhatsApp.</p>
-            </div>
-            <div className="mt-10">
-              <BranchTabs />
-            </div>
-          </div>
-        </section>
-
-        <section id="contact" className="py-20 sm:py-28">
+        <section id="contact" className="py-20 sm:py-12">
           <div className="container-page">
             <div className="overflow-hidden rounded-[2.5rem] bg-[#702fa0] p-8 text-white shadow-2xl sm:p-12 lg:p-16">
               <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
