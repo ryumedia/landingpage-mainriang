@@ -294,7 +294,6 @@ export default function Home() {
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Learning Journey</p>
               <h2 className="mt-3 text-4xl font-black tracking-tight text-[#28433b] sm:text-5xl">School Program</h2>
-              <p className="mt-4 text-[#65746f]">Program dasar mengikuti struktur pada brief dan dapat disesuaikan dengan dokumen resmi sekolah.</p>
             </div>
             <div className="mt-10 grid gap-5 lg:grid-cols-3">
               {schoolPrograms.map((program, i) => (
@@ -311,17 +310,6 @@ export default function Home() {
                   </ul>
                 </article>
               ))}
-            </div>
-            <div className="mt-6 rounded-[2rem] bg-[#702fa0] p-8 text-white">
-              <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
-                <div>
-                  <p className="text-sm font-black uppercase tracking-[.16em] text-[#f1e6fa]">Program Unggulan Main Riang</p>
-                  <h3 className="mt-2 text-2xl font-black">[ISI PROGRAM UNGGULAN RESMI]</h3>
-                </div>
-                <a href="#contact" className="inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-3 font-bold text-[#702fa0]">
-                  Tanya Program <ArrowRight className="size-4" />
-                </a>
-              </div>
             </div>
           </div>
         </section>

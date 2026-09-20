@@ -28,3 +28,10 @@
 {"timestamp":"02:40:31.687","source":"Browser","level":"ERROR","message":"The tag <Lightbulb> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter. "}
 {"timestamp":"02:40:31.689","source":"Server","level":"ERROR","message":"[browser] \"The tag <Lightbulb> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter.\" \"\""}
 {"timestamp":"02:40:37.426","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"04:38:20.835","source":"Server","level":"LOG","message":"✓ Compiled in 159ms"}
+{"timestamp":"04:39:53.884","source":"Server","level":"LOG","message":"✓ Compiled in 94ms"}
+{"timestamp":"04:44:56.161","source":"Server","level":"LOG","message":"✓ Compiled in 122ms"}
+{"timestamp":"04:56:26.018","source":"Server","level":"LOG","message":"✓ Compiled in 125ms"}
+{"timestamp":"05:19:49.548","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"05:19:56.004","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"14:32:21.896","source":"Server","level":"LOG","message":"✓ Compiled in 864ms"}

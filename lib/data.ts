@@ -65,18 +65,18 @@ export const registrations = [
 
 export const schoolPrograms = [
   {
-    title: "Playgroup",
-    description: "Program untuk anak usia dini dengan pengalaman belajar yang hangat dan bertahap.",
-    items: ["Adaptasi sekolah", "Social interaction", "Practical life", "Motor skills", "Language development", "Sensorial activities", "Islamic habits"]
+    title: "Daycare Class",
+    description: "Program untuk anak mulai usia 2-6 tahun dan bisa terintegrasi dengan Playgroup dan TK.",
+    items: ["CCTV", "Water Heater", "Mainan Edukatif", "Kamar Nyaman dan Bersih", "Fullday: 08.00 -17.00", "Halfday: 08.00 - 13.00 atau 12.00 - 17.00"]
   },
   {
-    title: "TK A",
-    description: "Mendorong kemandirian, bahasa, eksplorasi, dan perkembangan sosial-emosional.",
-    items: ["Kemandirian", "Bahasa", "Numerasi awal", "Sensorial", "Practical life", "Social emotional development", "Islamic character"]
+    title: "Playgroup Class",
+    description: "Program untuk anak mulai usia 2-4 tahun dan tersedia kelas pagi (08.00-09.30) dan siang (10.30-12.00).",
+    items: ["PG 1: Setiap Jumat (pagi)", "PG 2: Senin dan Rabu (pagi atau siang)", "PG 2: Selasa dan Kamis (pagi atau siang)", "PG 3 : Senin, Rabu, dan Jum'at (pagi)", "PG 3 : Selasa, Kamis dan Jum'at (pagi)", "PG 5 : Senin - Jum'at (pagi)"]
   },
   {
-    title: "TK B",
-    description: "Mempersiapkan anak menghadapi tahap belajar berikutnya dengan percaya diri.",
+    title: "TK Class",
+    description: "Program 2 Kelas (TK A dan TK B) untuk anak mulai usia 4-6 tahun dan hanya tersedia kelas pagi (08.00-11.00).",
     items: ["School readiness", "Academic readiness", "Independence", "Problem solving", "Communication", "Leadership", "Islamic character"]
   }
 ];
@@ -127,22 +127,22 @@ export const coreApproaches: CoreApproach[] = [
   {
     icon: "Heart",
     title: "Islamic Behaviour",
-    description: "Pembiasaan nilai-nilai Islam dalam kegiatan sehari-hari untuk membentuk adab, akhlak mulia, dan karakter anak.",
-    details: ["Pembiasaan ibadah & doa harian", "Adab dan akhlak mulia", "Keteladanan nilai Islam"],
+    description: "Kurikulum dirancang untuk membiasakan anak bersikap jujur, sabar, amanah, serta memiliki rasa persaudaraan yang tinggi terhadap sesama teman. -Setiap anak terlahir hebat tergantung bagaimana lingkungannya membentuknya-.",
+    details: ["Pembiasaan Praktik Ibadah", "Hafalan Surat Pendek & Doa", "Metode Belajar IQRO", "Sirah Nabawiyah"],
     image: "/images/approach-islamic-behaviour.jpg"
   },
   {
     icon: "Brain",
     title: "5 Area Montessori",
     description: "Pembelajaran melalui lima area Montessori yang menumbuhkan kemandirian, konsentrasi, dan kecintaan belajar.",
-    details: ["Practical Life", "Sensorial", "Language", "Mathematics", "Cultural"],
+    details: ["Practical Life : Membantu anak mengembangkan keterampilan hidup sehari-hari dan kemandirian melalui aktivitas praktis.", "Sensorial : Membantu anak mengembangkan kemampuan indra, fokus, dan pengamatan.", "Language : Membantu anak mengembangkan kemampuan bahasa, komunikasi, dan ekspresi.", "Mathematics : Membantu anak mengembangkan kemampuan berhitung, logika, dan pemecahan masalah.", "Cultural : Membantu anak mengenal lingkungan, budaya, dan kehidupan sosial."],
     image: "/images/approach-5-area-montessori.jpg"
   },
   {
     icon: "Lightbulb",
     title: "Gembira Beraksi",
     description: "Proyek kreatif dan kegiatan bermakna yang membuat anak belajar sambil bermain dengan gembira dan percaya diri.",
-    details: ["Project-based learning", "Kreativitas & eksplorasi", "Belajar penuh kegembiraan"],
+    details: ["Pengembangan Motorik & Kognitif", "Kreativitas Tanpa Batas", "Gerak & Musik", "Keterampilan Sosial"],
     image: "/images/approach-gembira-beraksi.jpg"
   }
 ];
