@@ -651,7 +651,7 @@ const coreApproaches = [
 const gallery = [
     {
         title: "Montessori Activity",
-        photo: "/images/montessori.jfif"
+        photo: "/images/montessori.jpg"
     },
     {
         title: "Outdoor Activity",
@@ -659,19 +659,19 @@ const gallery = [
     },
     {
         title: "Islamic Activity",
-        photo: "/images/pray.jfif"
+        photo: "/images/pray.jpg"
     },
     {
         title: "Art & Creativity",
-        photo: "/images/art.jfif"
+        photo: "/images/art.jpg"
     },
     {
         title: "Practical Life",
-        photo: "/images/practical-life.jfif"
+        photo: "/images/practical-life.jpg"
     },
     {
         title: "Classroom",
-        photo: "/images/classroom.jfif"
+        photo: "/images/classroom.jpg"
     },
     {
         title: "Playground",

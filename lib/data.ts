@@ -153,12 +153,12 @@ export type GalleryItem = {
 };
 
 export const gallery: GalleryItem[] = [
-  { title: "Montessori Activity", photo: "/images/montessori.jfif" },
+  { title: "Montessori Activity", photo: "/images/montessori.jpg" },
   { title: "Outdoor Activity", photo: "/images/outdoor2.jpeg" },
-  { title: "Islamic Activity", photo: "/images/pray.jfif" },
-  { title: "Art & Creativity", photo: "/images/art.jfif" },
-  { title: "Practical Life", photo: "/images/practical-life.jfif" },
-  { title: "Classroom", photo: "/images/classroom.jfif" },
+  { title: "Islamic Activity", photo: "/images/pray.jpg" },
+  { title: "Art & Creativity", photo: "/images/art.jpg" },
+  { title: "Practical Life", photo: "/images/practical-life.jpg" },
+  { title: "Classroom", photo: "/images/classroom.jpg" },
   { title: "Playground", photo: "/images/playground.jpeg" },
   { title: "Daycare", photo: "/images/outdoor.jpg" }
 ];

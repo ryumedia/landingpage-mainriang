@@ -388,7 +388,7 @@ export default function Home() {
                 <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">School Experience</p>
                 <h2 className="mt-3 text-4xl font-black tracking-tight text-[#28433b] sm:text-5xl">Momen Belajar di Main Riang</h2>
               </div>
-              <p className="max-w-md text-[#65746f]">Ganti setiap placeholder dengan foto asli sekolah pada folder <code className="rounded bg-[#f5f2e9] px-1">public/images</code>.</p>
+              {/*<p className="max-w-md text-[#65746f]">Ganti setiap placeholder dengan foto asli sekolah pada folder <code className="rounded bg-[#f5f2e9] px-1">public/images</code>.</p>*/}
             </div>
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {gallery.map((item, i) => {
