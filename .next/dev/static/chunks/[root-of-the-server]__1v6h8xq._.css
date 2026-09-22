@@ -603,6 +603,10 @@
     margin-top: calc(var(--spacing) * 12);
   }
 
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+
   .block {
     display: block;
   }
@@ -937,6 +941,10 @@
     background-color: #28433b;
   }
 
+  .bg-\[\#057512\] {
+    background-color: #057512;
+  }
+
   .bg-\[\#f1e6fa\] {
     background-color: #f1e6fa;
   }
@@ -1006,6 +1014,10 @@
 
   .fill-current {
     fill: currentColor;
+  }
+
+  .object-contain {
+    object-fit: contain;
   }
 
   .object-cover {
@@ -1078,6 +1090,10 @@
 
   .py-3\.5 {
     padding-block: calc(var(--spacing) * 3.5);
+  }
+
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
   }
 
   .py-12 {
@@ -1382,8 +1398,16 @@
       background-color: #1c332c;
     }
 
+    .hover\:bg-\[\#004f09\]:hover {
+      background-color: #004f09;
+    }
+
     .hover\:bg-\[\#53217a\]:hover {
       background-color: #53217a;
+    }
+
+    .hover\:bg-\[\#d17702\]:hover {
+      background-color: #d17702;
     }
 
     .hover\:bg-\[\#f3f1e9\]:hover {
@@ -1478,6 +1502,10 @@
 
     .sm\:p-12 {
       padding: calc(var(--spacing) * 12);
+    }
+
+    .sm\:py-6 {
+      padding-block: calc(var(--spacing) * 6);
     }
 
     .sm\:py-12 {
@@ -1586,6 +1614,10 @@
 
     .lg\:p-16 {
       padding: calc(var(--spacing) * 16);
+    }
+
+    .lg\:py-6 {
+      padding-block: calc(var(--spacing) * 6);
     }
 
     .lg\:py-20 {

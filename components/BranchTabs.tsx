@@ -67,7 +67,7 @@ export default function BranchTabs() {
               }}
             >
               <MessageCircle className="size-5" />
-              Hubungi via WhatsApp
+              WhatsApp
             </a>
 
             <a
@@ -77,7 +77,7 @@ export default function BranchTabs() {
               className={`inline-flex items-center gap-2 rounded-full border px-5 py-3 font-bold ${
                 branch.mapsUrl.includes("[")
                   ? "cursor-not-allowed border-slate-200 text-slate-400"
-                  : "border-[#e2d3f2] text-[#702fa0] hover:bg-[#faf5ff]"
+                  : "bg-[#057512] text-white hover:bg-[#004f09] hover:-translate-y-0.5"
               }`}
               onClick={(e) => {
                 if (branch.mapsUrl.includes("[")) e.preventDefault();
@@ -95,7 +95,7 @@ export default function BranchTabs() {
               className={`inline-flex items-center gap-2 rounded-full px-5 py-3 font-bold transition ${
                 branch.pricelistUrl.includes("[")
                   ? "cursor-not-allowed bg-slate-200 text-slate-500"
-                  : "bg-[#28433b] text-white hover:bg-[#1c332c] hover:-translate-y-0.5"
+                  : "bg-[#ff9302] text-white hover:bg-[#d17702] hover:-translate-y-0.5"
               }`}
               onClick={(e) => {
                 if (branch.pricelistUrl.includes("[")) e.preventDefault();

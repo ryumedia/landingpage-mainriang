@@ -90,22 +90,22 @@ export type Testimonial = {
 
 export const testimonials: Testimonial[] = [
   {
-    photo: "[FOTO_ORANG_TUA_1]",
-    parentName: "[NAMA ORANG TUA 1]",
-    childName: "[NAMA ANAK 1]",
-    message: "[ISI TESTIMONI 1]"
+    photo: "/images/momwindi.webp",
+    parentName: "Mom Windi",
+    childName: "Mema",
+    message: "Setelah sharing dengan teman. Saya memutuskan untuk mendaftarkan Alkeema ke Mainriang. Guru gurunya baik banget. Kegiatan yang dilakukan berdasarkan assesment Psikolog."
   },
   {
-    photo: "[FOTO_ORANG_TUA_2]",
-    parentName: "[NAMA ORANG TUA 2]",
-    childName: "[NAMA ANAK 2]",
-    message: "[ISI TESTIMONI 2]"
+    photo: "/images/momnadhifa.webp",
+    parentName: "Mom Nadhifa",
+    childName: "Arrasya",
+    message: "Alhamdulillah, Happy anaknya. Hari pertama sudah bisa langsung ditinggal karena banyak kegiatan. Malah seneng dianya.. he.. he.."
   },
   {
-    photo: "[FOTO_ORANG_TUA_3]",
-    parentName: "[NAMA ORANG TUA 3]",
-    childName: "[NAMA ANAK 3]",
-    message: "[ISI TESTIMONI 3]"
+    photo: "/images/momnurul.webp",
+    parentName: "Mom Nurul",
+    childName: "Abim",
+    message: "So far, aku sebagai orang tua merasa puas, karena kita difasilitasi konsultasi dengan Psikolog untuk mengetahui tumbuh kembang anak dan ini murni fokus di Montessori ya..."
   }
 ];
 
@@ -153,14 +153,14 @@ export type GalleryItem = {
 };
 
 export const gallery: GalleryItem[] = [
-  { title: "Montessori Activity", photo: "[FOTO_GALLERY_1]" },
-  { title: "Outdoor Activity", photo: "[FOTO_GALLERY_2]" },
-  { title: "Islamic Activity", photo: "[FOTO_GALLERY_3]" },
-  { title: "Art & Creativity", photo: "[FOTO_GALLERY_4]" },
-  { title: "Practical Life", photo: "[FOTO_GALLERY_5]" },
-  { title: "Classroom", photo: "[FOTO_GALLERY_6]" },
-  { title: "Playground", photo: "[FOTO_GALLERY_7]" },
-  { title: "Daycare", photo: "[FOTO_GALLERY_8]" }
+  { title: "Montessori Activity", photo: "/images/montessori.jfif" },
+  { title: "Outdoor Activity", photo: "/images/outdoor2.jpeg" },
+  { title: "Islamic Activity", photo: "/images/pray.jfif" },
+  { title: "Art & Creativity", photo: "/images/art.jfif" },
+  { title: "Practical Life", photo: "/images/practical-life.jfif" },
+  { title: "Classroom", photo: "/images/classroom.jfif" },
+  { title: "Playground", photo: "/images/playground.jpeg" },
+  { title: "Daycare", photo: "/images/outdoor.jpg" }
 ];
 
 export function whatsappUrl(branch: Branch) {

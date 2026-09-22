@@ -113,7 +113,7 @@ function BranchTabs() {
                                                 lineNumber: 69,
                                                 columnNumber: 15
                                             }, this),
-                                            "Hubungi via WhatsApp"
+                                            "WhatsApp"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/BranchTabs.tsx",
@@ -124,7 +124,7 @@ function BranchTabs() {
                                         href: branch.mapsUrl.includes("[") ? "#" : branch.mapsUrl,
                                         target: "_blank",
                                         rel: "noreferrer",
-                                        className: `inline-flex items-center gap-2 rounded-full border px-5 py-3 font-bold ${branch.mapsUrl.includes("[") ? "cursor-not-allowed border-slate-200 text-slate-400" : "border-[#e2d3f2] text-[#702fa0] hover:bg-[#faf5ff]"}`,
+                                        className: `inline-flex items-center gap-2 rounded-full border px-5 py-3 font-bold ${branch.mapsUrl.includes("[") ? "cursor-not-allowed border-slate-200 text-slate-400" : "bg-[#057512] text-white hover:bg-[#004f09] hover:-translate-y-0.5"}`,
                                         onClick: (e)=>{
                                             if (branch.mapsUrl.includes("[")) e.preventDefault();
                                         },
@@ -148,7 +148,7 @@ function BranchTabs() {
                                         target: "_blank",
                                         rel: "noreferrer",
                                         "aria-label": `Lihat pricelist ${branch.name}`,
-                                        className: `inline-flex items-center gap-2 rounded-full px-5 py-3 font-bold transition ${branch.pricelistUrl.includes("[") ? "cursor-not-allowed bg-slate-200 text-slate-500" : "bg-[#28433b] text-white hover:bg-[#1c332c] hover:-translate-y-0.5"}`,
+                                        className: `inline-flex items-center gap-2 rounded-full px-5 py-3 font-bold transition ${branch.pricelistUrl.includes("[") ? "cursor-not-allowed bg-slate-200 text-slate-500" : "bg-[#ff9302] text-white hover:bg-[#d17702] hover:-translate-y-0.5"}`,
                                         onClick: (e)=>{
                                             if (branch.pricelistUrl.includes("[")) e.preventDefault();
                                         },
@@ -224,12 +224,14 @@ __turbopack_context__.s([
     ()=>MobileNav
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/menu.js [app-client] (ecmascript) <export default as Menu>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 const links = [
@@ -271,21 +273,32 @@ function MobileNav() {
                 className: "rounded-xl p-2 text-[#28433b] hover:bg-[#f3f1e9]",
                 children: open ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {}, void 0, false, {
                     fileName: "[project]/components/MobileNav.tsx",
-                    lineNumber: 26,
+                    lineNumber: 27,
                     columnNumber: 17
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {}, void 0, false, {
                     fileName: "[project]/components/MobileNav.tsx",
-                    lineNumber: 26,
+                    lineNumber: 27,
                     columnNumber: 25
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/MobileNav.tsx",
-                lineNumber: 20,
+                lineNumber: 21,
                 columnNumber: 7
             }, this),
             open && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute left-4 right-4 top-[72px] rounded-2xl border border-[#e7e5dc] bg-white p-3 shadow-2xl",
                 children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        src: "/images/logo.png",
+                        alt: "Logo Main Riang Preschool",
+                        width: 40,
+                        height: 40,
+                        className: "mb-2 size-10 rounded-2xl object-contain shadow-sm"
+                    }, void 0, false, {
+                        fileName: "[project]/components/MobileNav.tsx",
+                        lineNumber: 32,
+                        columnNumber: 11
+                    }, this),
                     links.map(([label, id])=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             href: `#${id}`,
                             onClick: ()=>setOpen(false),
@@ -293,7 +306,7 @@ function MobileNav() {
                             children: label
                         }, id, false, {
                             fileName: "[project]/components/MobileNav.tsx",
-                            lineNumber: 32,
+                            lineNumber: 40,
                             columnNumber: 13
                         }, this)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -303,19 +316,19 @@ function MobileNav() {
                         children: "Hubungi Kami"
                     }, void 0, false, {
                         fileName: "[project]/components/MobileNav.tsx",
-                        lineNumber: 41,
+                        lineNumber: 49,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/MobileNav.tsx",
-                lineNumber: 30,
+                lineNumber: 31,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/MobileNav.tsx",
-        lineNumber: 19,
+        lineNumber: 20,
         columnNumber: 5
     }, this);
 }
@@ -406,53 +419,62 @@ function RegistrationCard({ item }) {
         onClick: (e)=>{
             if (placeholder) e.preventDefault();
         },
-        className: `group flex-col rounded-[2rem] border-[#e7e5dc] bg-[#fffaf1] p-7 transition ${placeholder ? "cursor-not-allowed opacity-70" : "hover:-translate-y-2 hover:shadow-xl"}`,
+        className: `group flex flex-col rounded-[2rem] border-[#e7e5dc] bg-[#fffaf1] p-7 transition ${placeholder ? "cursor-not-allowed opacity-70" : "hover:-translate-y-2 hover:shadow-xl"}`,
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                className: "flex size-12 items-center justify-center rounded-2xl bg-[#f1e6fa] text-[#702fa0]",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
-                    className: "size-6"
-                }, void 0, false, {
-                    fileName: "[project]/components/RegistrationCard.tsx",
-                    lineNumber: 35,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex items-center gap-4",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "flex size-12 items-center justify-center rounded-2xl bg-[#f1e6fa] text-[#ff9302]",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Icon, {
+                            className: "size-6"
+                        }, void 0, false, {
+                            fileName: "[project]/components/RegistrationCard.tsx",
+                            lineNumber: 36,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/RegistrationCard.tsx",
+                        lineNumber: 35,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        className: "text-2xl font-black text-[#28433b]",
+                        children: item.title
+                    }, void 0, false, {
+                        fileName: "[project]/components/RegistrationCard.tsx",
+                        lineNumber: 38,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "[project]/components/RegistrationCard.tsx",
                 lineNumber: 34,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                className: "mt-6 text-2xl font-black text-[#28433b]",
-                children: item.title
-            }, void 0, false, {
-                fileName: "[project]/components/RegistrationCard.tsx",
-                lineNumber: 37,
-                columnNumber: 7
-            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "mt-3 flex-1 leading-7 text-[#65746f]",
+                className: "mt-5 flex-1 leading-7 text-[#65746f]",
                 children: item.description
             }, void 0, false, {
                 fileName: "[project]/components/RegistrationCard.tsx",
-                lineNumber: 38,
+                lineNumber: 40,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                className: "mt-8 inline-flex w-fit items-center gap-2 rounded-full bg-[#702fa0] px-5 py-3 font-bold text-white transition group-hover:gap-3 group-hover:bg-[#53217a]",
+                className: "mt-8 inline-flex w-fit items-center gap-2 rounded-full bg-[#ff9302] px-5 py-3 font-bold text-white transition group-hover:gap-3 group-hover:bg-[#53217a]",
                 children: [
                     "Daftar Sekarang ",
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
                         className: "size-4"
                     }, void 0, false, {
                         fileName: "[project]/components/RegistrationCard.tsx",
-                        lineNumber: 40,
+                        lineNumber: 42,
                         columnNumber: 25
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/RegistrationCard.tsx",
-                lineNumber: 39,
+                lineNumber: 41,
                 columnNumber: 7
             }, this)
         ]
@@ -582,22 +604,22 @@ const schoolPrograms = [
 ];
 const testimonials = [
     {
-        photo: "[FOTO_ORANG_TUA_1]",
-        parentName: "[NAMA ORANG TUA 1]",
-        childName: "[NAMA ANAK 1]",
-        message: "[ISI TESTIMONI 1]"
+        photo: "/images/momwindi.webp",
+        parentName: "Mom Windi",
+        childName: "Mema",
+        message: "Setelah sharing dengan teman. Saya memutuskan untuk mendaftarkan Alkeema ke Mainriang. Guru gurunya baik banget. Kegiatan yang dilakukan berdasarkan assesment Psikolog."
     },
     {
-        photo: "[FOTO_ORANG_TUA_2]",
-        parentName: "[NAMA ORANG TUA 2]",
-        childName: "[NAMA ANAK 2]",
-        message: "[ISI TESTIMONI 2]"
+        photo: "/images/momnadhifa.webp",
+        parentName: "Mom Nadhifa",
+        childName: "Arrasya",
+        message: "Alhamdulillah, Happy anaknya. Hari pertama sudah bisa langsung ditinggal karena banyak kegiatan. Malah seneng dianya.. he.. he.."
     },
     {
-        photo: "[FOTO_ORANG_TUA_3]",
-        parentName: "[NAMA ORANG TUA 3]",
-        childName: "[NAMA ANAK 3]",
-        message: "[ISI TESTIMONI 3]"
+        photo: "/images/momnurul.webp",
+        parentName: "Mom Nurul",
+        childName: "Abim",
+        message: "So far, aku sebagai orang tua merasa puas, karena kita difasilitasi konsultasi dengan Psikolog untuk mengetahui tumbuh kembang anak dan ini murni fokus di Montessori ya..."
     }
 ];
 const trilogi = [
@@ -659,35 +681,35 @@ const coreApproaches = [
 const gallery = [
     {
         title: "Montessori Activity",
-        photo: "[FOTO_GALLERY_1]"
+        photo: "/images/montessori.jfif"
     },
     {
         title: "Outdoor Activity",
-        photo: "[FOTO_GALLERY_2]"
+        photo: "/images/outdoor2.jpeg"
     },
     {
         title: "Islamic Activity",
-        photo: "[FOTO_GALLERY_3]"
+        photo: "/images/pray.jfif"
     },
     {
         title: "Art & Creativity",
-        photo: "[FOTO_GALLERY_4]"
+        photo: "/images/art.jfif"
     },
     {
         title: "Practical Life",
-        photo: "[FOTO_GALLERY_5]"
+        photo: "/images/practical-life.jfif"
     },
     {
         title: "Classroom",
-        photo: "[FOTO_GALLERY_6]"
+        photo: "/images/classroom.jfif"
     },
     {
         title: "Playground",
-        photo: "[FOTO_GALLERY_7]"
+        photo: "/images/playground.jpeg"
     },
     {
         title: "Daycare",
-        photo: "[FOTO_GALLERY_8]"
+        photo: "/images/outdoor.jpg"
     }
 ];
 function whatsappUrl(branch) {

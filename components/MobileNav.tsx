@@ -1,5 +1,6 @@
-﻿"use client";
+﻿﻿"use client";
 
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -28,6 +29,13 @@ export default function MobileNav() {
 
       {open && (
         <div className="absolute left-4 right-4 top-[72px] rounded-2xl border border-[#e7e5dc] bg-white p-3 shadow-2xl">
+          <Image
+            src="/images/logo.png"
+            alt="Logo Main Riang Preschool"
+            width={40}
+            height={40}
+            className="mb-2 size-10 rounded-2xl object-contain shadow-sm"
+          />
           {links.map(([label, id]) => (
             <a
               key={id}

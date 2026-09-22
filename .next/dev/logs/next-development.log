@@ -1,3 +1,23 @@
-{"timestamp":"00:00:17.563","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:02:05.873","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
-{"timestamp":"00:14:08.884","source":"Server","level":"LOG","message":"✓ Compiled in 84ms"}
+{"timestamp":"00:00:24.224","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:27.871","source":"Server","level":"LOG","message":"○ Compiling / ..."}
+{"timestamp":"00:00:38.891","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:23:41.434","source":"Server","level":"LOG","message":"✓ Compiled in 136ms"}
+{"timestamp":"00:30:22.836","source":"Server","level":"LOG","message":"✓ Compiled in 189ms"}
+{"timestamp":"00:33:19.709","source":"Server","level":"LOG","message":"✓ Compiled in 105ms"}
+{"timestamp":"00:34:46.609","source":"Server","level":"LOG","message":"✓ Compiled in 236ms"}
+{"timestamp":"00:35:28.720","source":"Server","level":"LOG","message":"✓ Compiled in 84ms"}
+{"timestamp":"00:36:30.811","source":"Server","level":"LOG","message":"✓ Compiled in 170ms"}
+{"timestamp":"00:38:10.052","source":"Server","level":"LOG","message":"✓ Compiled in 115ms"}
+{"timestamp":"00:38:37.567","source":"Server","level":"LOG","message":"✓ Compiled in 108ms"}
+{"timestamp":"00:39:06.995","source":"Server","level":"LOG","message":"✓ Compiled in 120ms"}
+{"timestamp":"00:41:03.561","source":"Server","level":"LOG","message":"✓ Compiled in 92ms"}
+{"timestamp":"00:42:17.965","source":"Server","level":"LOG","message":"✓ Compiled in 85ms"}
+{"timestamp":"01:36:35.079","source":"Server","level":"LOG","message":"✓ Compiled in 829ms"}
+{"timestamp":"01:41:52.318","source":"Server","level":"LOG","message":"✓ Compiled in 488ms"}
+{"timestamp":"01:42:07.473","source":"Server","level":"LOG","message":"✓ Compiled in 827ms"}
+{"timestamp":"01:47:12.284","source":"Server","level":"LOG","message":"✓ Compiled in 524ms"}
+{"timestamp":"03:24:08.367","source":"Server","level":"LOG","message":"✓ Compiled in 223ms"}
+{"timestamp":"03:25:07.918","source":"Server","level":"LOG","message":"✓ Compiled in 122ms"}
+{"timestamp":"03:36:08.797","source":"Server","level":"ERROR","message":"⨯ \"The requested resource isn't a valid image for\" \"/images/outdoor2.jpg\" \"received\" null"}
+{"timestamp":"03:43:01.697","source":"Server","level":"LOG","message":"✓ Compiled in 122ms"}
+{"timestamp":"04:15:20.148","source":"Server","level":"ERROR","message":"⨯ \"The requested resource isn't a valid image for\" \"/images/practical-life.jpg\" \"received\" null"}

@@ -1,4 +1,5 @@
-﻿import Link from "next/link";
+﻿﻿import Image from "next/image";
+import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 import MobileNav from "./MobileNav";
 
@@ -16,12 +17,17 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-[#e7e5dc]/80 bg-[#fffaf1]/90 backdrop-blur-xl">
       <div className="container-page relative flex h-[72px] items-center justify-between">
         <Link href="/" className="flex items-center gap-3" aria-label="Main Riang Preschool">
-          <span className="flex size-10 items-center justify-center rounded-2xl bg-[#702fa0] text-xl text-white shadow-sm">
-            ✿
-          </span>
+          <Image
+            src="/images/logo.png"
+            alt="Logo Main Riang Preschool"
+            width={40}
+            height={40}
+            className="size-10 rounded-2xl object-contain shadow-sm"
+            priority
+          />
           <span>
             <span className="block text-sm font-black tracking-[.08em] text-[#28433b]">MAIN RIANG</span>
-            <span className="block text-[10px] font-bold tracking-[.18em] text-[#7a8984]">PRESCHOOL</span>
+            <span className="block text-[10px] font-bold tracking-[.18em] text-[#7a8984]">ISLAMIC PRESCHOOL</span>
           </span>
         </Link>
 

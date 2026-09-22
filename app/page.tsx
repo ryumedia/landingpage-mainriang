@@ -1,4 +1,4 @@
-﻿﻿import {
+﻿﻿﻿import {
   ArrowRight,
   Brain,
   Check,
@@ -52,8 +52,8 @@ const reasons = [
   },
   {
     icon: Users,
-    title: "Experienced School",
-    text: "Informasi pengalaman dan pencapaian sekolah dapat ditambahkan berdasarkan data resmi."
+    title: "School Readiness",
+    text: "Menyiapkan anak untuk kesiapan belajar di jenjang Sekolah Dasar."
   }
 ];
 
@@ -70,12 +70,12 @@ export default function Home() {
     <>
       <Navbar />
       <main>
-        <section id="pendaftaran" className="bg-white py-20 sm:py-12">
+        <section id="pendaftaran" className="bg-white py-6 sm:py-6">
           <div className="container-page">
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Pendaftaran</p>
               <h2 className="mt-3 text-4xl font-black tracking-tight text-[#28433b] sm:text-5xl">
-                Bergabung, dan Jadilah Bagian dari <span className="text-[#702fa0]">Keluarga Main Riang</span>
+                Jadilah Bagian dari <span className="text-[#702fa0]">Keluarga Main Riang</span>
               </h2>
               <p className="mt-4 text-[#65746f]">Pilih jenis pendaftaran yang sesuai untuk memulai perjalanan belajar putra-putri Anda.</p>
             </div>
@@ -87,7 +87,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="cabang" className="bg-[#f3f8f5] py-20 sm:py-12">
+        <section id="cabang" className="bg-[#f3f8f5] py-6 sm:py-6">
           <div className="container-page">
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Our Branches</p>
@@ -101,7 +101,7 @@ export default function Home() {
         </section>
 
         <section className="soft-grid relative overflow-hidden">
-          <div className="container-page grid min-h-[calc(100svh-72px)] items-center gap-10 py-14 lg:grid-cols-[1.02fr_.98fr] lg:py-20">
+          <div className="container-page grid min-h-[calc(100svh-72px)] items-center gap-10 py-6 lg:grid-cols-[1.02fr_.98fr] lg:py-6">
             <div className="reveal">
               <span className="inline-flex items-center gap-2 rounded-full border border-[#e2d3f2] bg-white/80 px-4 py-2 text-xs font-black uppercase tracking-[.16em] text-[#702fa0]">
                 <Sparkles className="size-4" />
@@ -165,7 +165,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="bg-white py-20 sm:py-12">
+        <section id="about" className="bg-white py-6 sm:py-6">
           <div className="container-page grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
             <div>
               <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">About Main Riang</p>
@@ -194,7 +194,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="visi-misi" className="islamic-pattern py-20 sm:py-12">
+        <section id="visi-misi" className="islamic-pattern py-6 sm:py-6">
           <div className="container-page">
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Identity</p>
@@ -221,7 +221,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="trilogi" className="bg-white py-20 sm:py-12">
+        <section id="trilogi" className="bg-white py-6 sm:py-6">
           <div className="container-page">
             <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
               <div>
@@ -289,7 +289,7 @@ export default function Home() {
           );
         })}
 
-        <section id="school-program" className="bg-white py-20 sm:py-12">
+        <section id="school-program" className="bg-white py-6 sm:py-6">
           <div className="container-page">
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Learning Journey</p>
@@ -314,7 +314,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-[#fffaf1] py-20 sm:py-12">
+        <section className="bg-[#fffaf1] py-6 sm:py-6">
           <div className="container-page">
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Why Main Riang?</p>
@@ -335,7 +335,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="testimoni" className="bg-[#f3f8f5] py-20 sm:py-12">
+        <section id="testimoni" className="bg-[#f3f8f5] py-6 sm:py-6">
           <div className="container-page">
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Testimoni</p>
@@ -381,7 +381,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="gallery" className="bg-white py-20 sm:py-12">
+        <section id="gallery" className="bg-white py-6 sm:py-6">
           <div className="container-page">
             <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
               <div>
@@ -421,7 +421,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="py-20 sm:py-12">
+        <section id="contact" className="py-6 sm:py-6">
           <div className="container-page">
             <div className="overflow-hidden rounded-[2.5rem] bg-[#702fa0] p-8 text-white shadow-2xl sm:p-12 lg:p-16">
               <div className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
@@ -450,7 +450,13 @@ export default function Home() {
         <div className="container-page grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3">
-              <span className="flex size-10 items-center justify-center rounded-2xl bg-[#702fa0] text-xl text-white">✿</span>
+              <Image
+                src="/images/logo.png"
+                alt="Logo Main Riang Preschool"
+                width={40}
+                height={40}
+                className="size-10 rounded-2xl object-contain shadow-sm"
+              />
               <div>
                 <p className="font-black tracking-[.08em] text-[#28433b]">MAIN RIANG PRESCHOOL</p>
                 <p className="text-xs font-bold tracking-[.16em] text-[#7a8984]">PLAYGROUP & TK • ISLAMIC MONTESSORI</p>
