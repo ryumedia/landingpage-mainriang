@@ -468,7 +468,7 @@ const branches = [
         address: "Jl. Babakan Radio, Sukaraja, Kec. Cicendo, Kota Bandung, Jawa Barat 40175",
         whatsapp: "6285710905799",
         mapsUrl: "https://maps.app.goo.gl/aSnTgEyDJf1irViDA",
-        pricelistUrl: "[LINK_PRICELIST_GUNUNG_BATU]",
+        pricelistUrl: "https://drive.google.com/file/d/1gcrJ5ybiYN8k6qdauJbHeTY3lv16A3s9/view?usp=sharing",
         photo: "/images/cabang-gunung-batu.jpg"
     },
     {
@@ -478,7 +478,7 @@ const branches = [
         address: "Jl. Cicukang, Cisaranten Bina Harapan, Kec. Arcamanik, Kota Bandung, Jawa Barat 40294",
         whatsapp: "6285520925820",
         mapsUrl: "https://maps.app.goo.gl/nhQPtzMfDTwDCLFq6",
-        pricelistUrl: "[LINK_PRICELIST_ARCAMANIK]",
+        pricelistUrl: "https://drive.google.com/file/d/1qo1HFZEXtabm9UqtjgHuly4CA7f5aJ63/view?usp=sharing",
         photo: "/images/cabang-arcamanik.jpg"
     },
     {
@@ -488,7 +488,7 @@ const branches = [
         address: "Komplek Bumi Sanggar Mebel 2 Blok A 11-12, Cileunyi Kulon, Kec. Cileunyi, Kabupaten Bandung, Jawa Barat 40622",
         whatsapp: "628131274868",
         mapsUrl: "https://maps.app.goo.gl/efinqovsNzHuGPzp7",
-        pricelistUrl: "[LINK_PRICELIST_CILEUNYI]",
+        pricelistUrl: "https://drive.google.com/file/d/1pyS7kHmbbTeFFEuaeVVVWvTLIZsVpHLW/view?usp=sharing",
         photo: "/images/cabang-cileunyi.jpg"
     }
 ];
@@ -541,13 +541,12 @@ const schoolPrograms = [
         title: "TK Class",
         description: "Program 2 Kelas (TK A dan TK B) untuk anak mulai usia 4-6 tahun dan hanya tersedia kelas pagi (08.00-11.00).",
         items: [
-            "School readiness",
-            "Academic readiness",
-            "Independence",
-            "Problem solving",
-            "Communication",
-            "Leadership",
-            "Islamic character"
+            "5 Hari (Senin - Jum'at)",
+            "Mainan Edukatif Montessori",
+            "Disediakan Media Pembelajaran",
+            "CCTV",
+            "Semester Program",
+            "Annual Program"
         ]
     }
 ];

@@ -91,7 +91,7 @@ export default function Home() {
           <div className="container-page">
             <div className="mx-auto max-w-3xl text-center">
               <p className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Our Branches</p>
-              <h2 className="mt-3 text-4xl font-black tracking-tight text-[#28433b] sm:text-5xl">Temukan Main Riang Terdekat</h2>
+              <h2 className="mt-3 text-4xl font-black tracking-tight text-[#28433b] sm:text-5xl">Info Lokasi dan Pricelist</h2>
               <p className="mt-4 text-[#65746f]">Pilih cabang untuk melihat informasi dan menghubungi sekolah melalui WhatsApp.</p>
             </div>
             <div className="mt-10">
