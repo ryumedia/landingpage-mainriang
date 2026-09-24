@@ -107,9 +107,9 @@ export default function Home() {
                 <Sparkles className="size-4" />
                 Playgroup & TK • Islamic Montessori
               </span>
-              <h1 className="mt-6 max-w-3xl text-5xl font-black leading-[.98] tracking-[-.045em] text-[#28433b] sm:text-6xl lg:text-7xl">
-                Tempat Anak Tumbuh, Belajar, dan Bermain dengan{" "}
-                <span className="text-[#702fa0]">Bahagia.</span>
+              <h1 className="mt-6 max-w-3xl text-5xl font-black leading-[.98] tracking-[-.045em] text-[#28433b] sm:text-5xl lg:text-5xl">
+                Tempat Anak Tumbuh, Belajar, dan Bermain{" "}
+                <span className="text-[#702fa0]">Penuh Makna.</span>
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#65746f] sm:text-lg">
                 Main Riang Preschool menghadirkan pengalaman belajar anak usia dini melalui pendekatan Islamic Montessori yang menumbuhkan kemandirian, karakter, kreativitas, dan kecintaan kepada Allah.
@@ -119,13 +119,13 @@ export default function Home() {
                   Pendaftaran <ArrowRight className="size-4" />
                 </a>
                 <a href="#cabang" className="inline-flex items-center justify-center rounded-full border border-[#e2d3f2] bg-white px-6 py-3.5 font-bold text-[#702fa0] transition hover:-translate-y-0.5 hover:bg-[#faf5ff]">
-                  Hubungi Kami via WhatsApp
+                  Hubungi Kami
                 </a>
               </div>
               <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold text-[#65746f]">
-                <span className="inline-flex items-center gap-2"><Check className="size-4 text-[#702fa0]" /> Child-centered</span>
-                <span className="inline-flex items-center gap-2"><Check className="size-4 text-[#702fa0]" /> Joyful learning</span>
-                <span className="inline-flex items-center gap-2"><Check className="size-4 text-[#702fa0]" /> Islamic values</span>
+                <span className="inline-flex items-center gap-2"><Check className="size-4 text-[#702fa0]" /> Islamic Values</span>
+                <span className="inline-flex items-center gap-2"><Check className="size-4 text-[#702fa0]" /> Meaningful Learning</span>
+                <span className="inline-flex items-center gap-2"><Check className="size-4 text-[#702fa0]" /> Montessori Approach</span>
               </div>
             </div>
 
@@ -179,15 +179,17 @@ export default function Home() {
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
               {[
-                ["Islamic Character", "🌙"],
-                ["Montessori Learning", "🧩"],
-                ["Happy Learning", "🌈"],
-                ["Growing Independence", "🌱"]
-              ].map(([title, icon]) => (
+                ["Islamic Values", "🌙", "Pembiasaan ibadah, akhlak mulia, dan kecintaan pada ajaran Islam sejak dini."],
+                ["Montessori Approach", "🧩", "Pembelajaran lima area Montessori yang menumbuhkan kemandirian dan konsentrasi anak."],
+                ["Meaningful Learning", "✏️", "Belajar sambil bermain melalui proyek kreatif yang bermakna dan menggembirakan."],
+                ["Growing Independence", "🌱", "Pendampingan yang membiasakan anak percaya diri dan mandiri dalam aktivitas sehari-hari."]
+              ].map(([title, icon, description]) => (
                 <div key={title} className="rounded-3xl border border-[#e7e5dc] bg-[#fffaf1] p-6 transition hover:-translate-y-1 hover:shadow-lg">
-                  <span className="flex size-12 items-center justify-center rounded-2xl bg-white text-2xl shadow-sm">{icon}</span>
-                  <h3 className="mt-5 font-black text-[#28433b]">{title}</h3>
-                  <p className="mt-2 text-sm leading-6 text-[#65746f]">Pengalaman belajar yang mendukung pertumbuhan anak secara utuh.</p>
+                  <div className="flex items-center gap-4">
+                    <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-white text-2xl shadow-sm">{icon}</span>
+                    <h3 className="font-black text-[#28433b]">{title}</h3>
+                  </div>
+                  <p className="mt-3 text-sm leading-6 text-[#65746f]">{description}</p>
                 </div>
               ))}
             </div>
@@ -204,7 +206,7 @@ export default function Home() {
               <div className="rounded-[2rem] bg-[#702fa0] p-8 text-white shadow-xl">
                 <p className="text-2xl font-black uppercase tracking-[.16em] text-[#f1e6fa]">Visi</p>
                 <h3 className="mt-4 text-3xl font-black">Harmoni Iman, Ilmu, & Kebaikan</h3>
-                <h1 className="mt-4 text-xl font-black">"Mengembangkan potensi insani anak secara holistik melalui keselarasan pemahaman nilai spiritual, keunggulan intelektual, dan pembentukan karakter mulia."</h1>
+                <h1 className="mt-4 text-xl font-black">&ldquo;Mengembangkan potensi insani anak secara holistik melalui keselarasan pemahaman nilai spiritual, keunggulan intelektual, dan pembentukan karakter mulia.&rdquo;</h1>
               </div>
               <div className="rounded-[2rem] border border-[#e7e5dc] bg-white p-8">
                 <p className="text-2xl font-black uppercase tracking-[.16em] text-[#702fa0]">Misi</p>
@@ -257,9 +259,8 @@ export default function Home() {
                     <span className="flex size-12 items-center justify-center rounded-2xl bg-[#f1e6fa] text-[#702fa0]">
                       <Icon className="size-6" />
                     </span>
-                    <span className="text-sm font-black uppercase tracking-[.16em] text-[#702fa0]">Core Approach {i + 1}</span>
+                    <h2 className="text-4xl font-black tracking-tight text-[#28433b] sm:text-5xl">{approach.title}</h2>
                   </div>
-                  <h2 className="mt-5 text-4xl font-black tracking-tight text-[#28433b] sm:text-5xl">{approach.title}</h2>
                   <p className="mt-5 leading-8 text-[#65746f]">{approach.description}</p>
                   <ul className="mt-6 space-y-3">
                     {approach.details.map((detail) => (
@@ -325,8 +326,10 @@ export default function Home() {
                 const Icon = reason.icon;
                 return (
                   <div key={reason.title} className="rounded-3xl border border-[#e7e5dc] bg-white p-6 transition hover:-translate-y-1 hover:shadow-lg">
-                    <Icon className="size-7 text-[#702fa0]" />
-                    <h3 className="mt-5 font-black text-[#28433b]">{reason.title}</h3>
+                    <div className="flex items-center gap-3">
+                      <Icon className="size-7 shrink-0 text-[#702fa0]" />
+                      <h3 className="font-black text-[#28433b]">{reason.title}</h3>
+                    </div>
                     <p className="mt-2 text-sm leading-6 text-[#65746f]">{reason.text}</p>
                   </div>
                 );

@@ -202,10 +202,6 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
-    --text-6xl: 3.75rem;
-    --text-6xl--line-height: 1;
-    --text-7xl: 4.5rem;
-    --text-7xl--line-height: 1;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-black: 900;
@@ -937,10 +933,6 @@
     background-color: #702fa0;
   }
 
-  .bg-\[\#28433b\] {
-    background-color: #28433b;
-  }
-
   .bg-\[\#057512\] {
     background-color: #057512;
   }
@@ -1098,10 +1090,6 @@
 
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
-  }
-
-  .py-14 {
-    padding-block: calc(var(--spacing) * 14);
   }
 
   .py-20 {
@@ -1394,10 +1382,6 @@
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
 
-    .hover\:bg-\[\#1c332c\]:hover {
-      background-color: #1c332c;
-    }
-
     .hover\:bg-\[\#004f09\]:hover {
       background-color: #004f09;
     }
@@ -1522,11 +1506,6 @@
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
 
-    .sm\:text-6xl {
-      font-size: var(--text-6xl);
-      line-height: var(--tw-leading, var(--text-6xl--line-height));
-    }
-
     .sm\:text-lg {
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -1620,17 +1599,13 @@
       padding-block: calc(var(--spacing) * 6);
     }
 
-    .lg\:py-20 {
-      padding-block: calc(var(--spacing) * 20);
-    }
-
     .lg\:pl-8 {
       padding-left: calc(var(--spacing) * 8);
     }
 
-    .lg\:text-7xl {
-      font-size: var(--text-7xl);
-      line-height: var(--tw-leading, var(--text-7xl--line-height));
+    .lg\:text-5xl {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
 }
