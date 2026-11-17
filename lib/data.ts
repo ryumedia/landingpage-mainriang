@@ -1,5 +1,5 @@
 export type Branch = {
-  id: "gunungBatu" | "arcamanik" | "cileunyi";
+  id: "gunungBatu" | "arcamanik" | "cileunyi" | "setrasari";
   shortName: string;
   name: string;
   address: string;
