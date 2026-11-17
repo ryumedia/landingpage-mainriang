@@ -39,7 +39,7 @@ export const branches: Branch[] = [
     mapsUrl: "https://maps.app.goo.gl/efinqovsNzHuGPzp7",
     pricelistUrl: "https://drive.google.com/file/d/1pyS7kHmbbTeFFEuaeVVVWvTLIZsVpHLW/view?usp=sharing",
     photo: "/images/cabang-cileunyi.jpg"
-  }
+  },
   {
     id: "setrasari",
     shortName: "Setrasari",
