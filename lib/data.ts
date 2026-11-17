@@ -40,6 +40,16 @@ export const branches: Branch[] = [
     pricelistUrl: "https://drive.google.com/file/d/1pyS7kHmbbTeFFEuaeVVVWvTLIZsVpHLW/view?usp=sharing",
     photo: "/images/cabang-cileunyi.jpg"
   }
+  {
+    id: "setrasari",
+    shortName: "Setrasari",
+    name: "Main Riang Preschool Setrasari",
+    address: "Jl. Terusan Karang Tineung Indah No 66 Sukajadi Kota Bandung",
+    whatsapp: "628132030024",
+    mapsUrl: "https://maps.app.goo.gl/6JV2JZzgiV7ZhWZN8?g_st=awb",
+    pricelistUrl: "https://drive.google.com/file/d/1WsNG6zFxUc6IJoYTvK62kLC_hnDI9ZG0/view?usp=sharing",
+    photo: "/images/cabang-setrasari.png"
+  }
 ];
 
 export const registrations = [
