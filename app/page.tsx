@@ -1,10 +1,11 @@
-﻿﻿﻿import {
+﻿﻿import {
   ArrowRight,
   Brain,
   Check,
   Heart,
   Lightbulb,
   Sparkles,
+  Smile,
   Star,
   Users,
 } from "lucide-react";
@@ -12,17 +13,17 @@ import Image from "next/image";
 import { existsSync } from "fs";
 import { join } from "path";
 import type { LucideIcon } from "lucide-react";
+import Navbar from "@/components/Navbar";
+import BranchTabs from "@/components/BranchTabs";
+import RegistrationCard from "@/components/RegistrationCard";
+import PendaftaranFloat from "@/components/PendaftaranFloat";
+import { coreApproaches, gallery, registrations, schoolPrograms, testimonials, trilogi } from "@/lib/data";
 
 const approachIcons: Record<string, LucideIcon> = {
   Heart,
   Brain,
   Lightbulb,
 };
-import Navbar from "@/components/Navbar";
-import BranchTabs from "@/components/BranchTabs";
-import RegistrationCard from "@/components/RegistrationCard";
-import PendaftaranFloat from "@/components/PendaftaranFloat";
-import { coreApproaches, gallery, registrations, schoolPrograms, testimonials, trilogi } from "@/lib/data";
 
 const reasons = [
   {
@@ -41,7 +42,7 @@ const reasons = [
     text: "Membangun kebiasaan baik, adab, kemandirian, dan tanggung jawab."
   },
   {
-    icon: SmileIcon,
+    icon: Smile,
     title: "Happy Learning",
     text: "Menciptakan pengalaman belajar yang menyenangkan dan bermakna."
   },
@@ -57,9 +58,7 @@ const reasons = [
   }
 ];
 
-function SmileIcon(props: React.ComponentProps<typeof Sparkles>) {
-  return <Sparkles {...props} />;
-}
+
 
 export default function Home() {
   const year = new Date().getFullYear();
@@ -206,12 +205,12 @@ export default function Home() {
               <div className="rounded-[2rem] bg-[#702fa0] p-8 text-white shadow-xl">
                 <p className="text-2xl font-black uppercase tracking-[.16em] text-[#f1e6fa]">Visi</p>
                 <h3 className="mt-4 text-3xl font-black">Harmoni Iman, Ilmu, & Kebaikan</h3>
-                <h1 className="mt-4 text-xl font-black">&ldquo;Mengembangkan potensi insani anak secara holistik melalui keselarasan pemahaman nilai spiritual, keunggulan intelektual, dan pembentukan karakter mulia.&rdquo;</h1>
+                <p className="mt-4 text-xl font-black">&ldquo;Mengembangkan potensi insani anak secara holistik melalui keselarasan pemahaman nilai spiritual, keunggulan intelektual, dan pembentukan karakter mulia.&rdquo;</p>
               </div>
               <div className="rounded-[2rem] border border-[#e7e5dc] bg-white p-8">
                 <p className="text-2xl font-black uppercase tracking-[.16em] text-[#702fa0]">Misi</p>
                 <div className="mt-6 space-y-4">
-                  {["Mengembangkan potensi anak secara holistik melalui pendekatan Montessori dan nilai-nilai Islam.", "Menciptakan lingkungan belajaryang menyenangkan, interaktif, dan mendukung kreativitas anak.", "Mengembangkan kemampuan anak untuk berpikir kritis, berani berimaginasi, dan memiliki rasa ingin tahu yang tinggi.", "Membentuk karakter anak yang berakhlak mulia, peduli, dan menghormati perbedaan.", "Meningkatkan kesadaran dan kecintaan terhadap islam."].map((m, i) => (
+                  {["Mengembangkan potensi anak secara holistik melalui pendekatan Montessori dan nilai-nilai Islam.", "Menciptakan lingkungan belajar yang menyenangkan, interaktif, dan mendukung kreativitas anak.", "Mengembangkan kemampuan anak untuk berpikir kritis, berani berimaginasi, dan memiliki rasa ingin tahu yang tinggi.", "Membentuk karakter anak yang berakhlak mulia, peduli, dan menghormati perbedaan.", "Meningkatkan kesadaran dan kecintaan terhadap Islam."].map((m, i) => (
                     <div key={m} className="flex gap-4 rounded-2xl bg-[#fffaf1] p-4">
                       <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-[#f1e6fa] text-sm font-black text-[#702fa0]">{i + 1}</span>
                       <p className="font-semibold text-[#52645e]">{m}</p>
@@ -245,7 +244,7 @@ export default function Home() {
         </section>
 
         {coreApproaches.map((approach, i) => {
-          const Icon = approachIcons[approach.icon];
+          const Icon = approachIcons[approach.icon] ?? Lightbulb;
           const imageExists = existsSync(join(process.cwd(), "public", approach.image.replace(/^\//, "")));
           return (
             <section

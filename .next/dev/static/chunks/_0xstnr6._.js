@@ -8,6 +8,8 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chevron-down.js [app-client] (ecmascript) <export default as ChevronDown>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/external-link.js [app-client] (ecmascript) <export default as ExternalLink>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/file-text.js [app-client] (ecmascript) <export default as FileText>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-client] (ecmascript) <export default as MapPin>");
@@ -16,6 +18,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$data$2e$ts__$5b$app$2
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -28,48 +31,97 @@ function BranchTabs() {
         className: "rounded-[2rem] border border-[#e7e5dc] bg-white p-3 shadow-[0_20px_60px_rgba(60,34,90,.08)]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "md:hidden",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                        htmlFor: "branch-select",
+                        className: "block rounded-2xl bg-[#702fa0] px-5 py-3 text-xs font-black uppercase tracking-[.14em] text-white",
+                        children: "Pilih Cabang Main Riang"
+                    }, void 0, false, {
+                        fileName: "[project]/components/BranchTabs.tsx",
+                        lineNumber: 17,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "relative mt-2",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                id: "branch-select",
+                                value: active,
+                                onChange: (e)=>setActive(e.target.value),
+                                className: "w-full appearance-none rounded-2xl border-2 border-[#702fa0] bg-white px-5 py-4 pr-12 text-base font-bold text-[#28433b] outline-none transition focus:ring-2 focus:ring-[#702fa0]/40",
+                                children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$data$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["branches"].map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                        value: item.id,
+                                        children: item.shortName
+                                    }, item.id, false, {
+                                        fileName: "[project]/components/BranchTabs.tsx",
+                                        lineNumber: 31,
+                                        columnNumber: 15
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "[project]/components/BranchTabs.tsx",
+                                lineNumber: 24,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
+                                "aria-hidden": "true",
+                                className: "pointer-events-none absolute right-4 top-1/2 size-5 -translate-y-1/2 text-[#702fa0]"
+                            }, void 0, false, {
+                                fileName: "[project]/components/BranchTabs.tsx",
+                                lineNumber: 36,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/BranchTabs.tsx",
+                        lineNumber: 23,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/BranchTabs.tsx",
+                lineNumber: 16,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 role: "tablist",
                 "aria-label": "Pilih cabang Main Riang",
-                className: "flex gap-2 overflow-x-auto rounded-2xl bg-[#f5f2e9] p-2",
+                className: "hidden gap-2 rounded-2xl bg-[#f5f2e9] p-2 md:flex",
                 children: __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$data$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["branches"].map((item)=>{
                     const selected = item.id === active;
                     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        id: `branch-tab-${item.id}`,
                         role: "tab",
                         "aria-selected": selected,
+                        "aria-controls": "branch-panel",
                         onClick: ()=>setActive(item.id),
                         className: `min-w-max rounded-xl px-5 py-3 text-sm font-bold transition ${selected ? "bg-[#702fa0] text-white shadow-md" : "text-[#52645e] hover:bg-white"}`,
                         children: item.shortName
                     }, item.id, false, {
                         fileName: "[project]/components/BranchTabs.tsx",
-                        lineNumber: 22,
+                        lineNumber: 52,
                         columnNumber: 13
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "[project]/components/BranchTabs.tsx",
-                lineNumber: 14,
+                lineNumber: 44,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                id: "branch-panel",
                 role: "tabpanel",
+                "aria-labelledby": `branch-tab-${branch.id}`,
                 className: "grid gap-8 p-5 sm:p-8 md:grid-cols-[1fr_.9fr] md:items-center",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "inline-flex rounded-full bg-[#f1e6fa] px-3 py-1 text-xs font-bold uppercase tracking-[.14em] text-[#702fa0]",
-                                children: "Cabang Main Riang"
-                            }, void 0, false, {
-                                fileName: "[project]/components/BranchTabs.tsx",
-                                lineNumber: 45,
-                                columnNumber: 11
-                            }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                className: "mt-4 text-2xl font-black tracking-tight text-[#28433b] sm:text-3xl",
+                                className: "text-2xl font-black tracking-tight text-[#28433b] sm:text-3xl",
                                 children: branch.name
                             }, void 0, false, {
                                 fileName: "[project]/components/BranchTabs.tsx",
-                                lineNumber: 48,
+                                lineNumber: 78,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -79,20 +131,20 @@ function BranchTabs() {
                                         className: "mt-1 size-5 shrink-0 text-[#702fa0]"
                                     }, void 0, false, {
                                         fileName: "[project]/components/BranchTabs.tsx",
-                                        lineNumber: 52,
+                                        lineNumber: 82,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: branch.address
                                     }, void 0, false, {
                                         fileName: "[project]/components/BranchTabs.tsx",
-                                        lineNumber: 53,
+                                        lineNumber: 83,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/BranchTabs.tsx",
-                                lineNumber: 51,
+                                lineNumber: 81,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -110,14 +162,14 @@ function BranchTabs() {
                                                 className: "size-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/BranchTabs.tsx",
-                                                lineNumber: 69,
+                                                lineNumber: 98,
                                                 columnNumber: 15
                                             }, this),
                                             "WhatsApp"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/BranchTabs.tsx",
-                                        lineNumber: 57,
+                                        lineNumber: 87,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -133,14 +185,14 @@ function BranchTabs() {
                                                 className: "size-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/BranchTabs.tsx",
-                                                lineNumber: 86,
+                                                lineNumber: 114,
                                                 columnNumber: 15
                                             }, this),
                                             "Lihat Peta"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/BranchTabs.tsx",
-                                        lineNumber: 73,
+                                        lineNumber: 102,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -157,54 +209,56 @@ function BranchTabs() {
                                                 className: "size-5"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/BranchTabs.tsx",
-                                                lineNumber: 104,
+                                                lineNumber: 131,
                                                 columnNumber: 15
                                             }, this),
                                             "Pricelist"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/BranchTabs.tsx",
-                                        lineNumber: 90,
+                                        lineNumber: 118,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/BranchTabs.tsx",
-                                lineNumber: 56,
+                                lineNumber: 86,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/BranchTabs.tsx",
-                        lineNumber: 44,
+                        lineNumber: 77,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "overflow-hidden rounded-[1.5rem]",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                        className: "relative aspect-[4/3] overflow-hidden rounded-[1.5rem]",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             src: branch.photo,
                             alt: `Foto ${branch.name}`,
-                            className: "aspect-[4/3] w-full object-cover"
+                            fill: true,
+                            sizes: "(max-width: 768px) 100vw, 40vw",
+                            className: "object-cover"
                         }, void 0, false, {
                             fileName: "[project]/components/BranchTabs.tsx",
-                            lineNumber: 111,
+                            lineNumber: 138,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/BranchTabs.tsx",
-                        lineNumber: 110,
+                        lineNumber: 137,
                         columnNumber: 9
                     }, this)
                 ]
             }, branch.id, true, {
                 fileName: "[project]/components/BranchTabs.tsx",
-                lineNumber: 39,
+                lineNumber: 70,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/BranchTabs.tsx",
-        lineNumber: 13,
+        lineNumber: 14,
         columnNumber: 5
     }, this);
 }
@@ -541,6 +595,16 @@ const branches = [
         mapsUrl: "https://maps.app.goo.gl/efinqovsNzHuGPzp7",
         pricelistUrl: "https://drive.google.com/file/d/1pyS7kHmbbTeFFEuaeVVVWvTLIZsVpHLW/view?usp=sharing",
         photo: "/images/cabang-cileunyi.jpg"
+    },
+    {
+        id: "setrasari",
+        shortName: "Setrasari",
+        name: "Main Riang Preschool Setrasari",
+        address: "Jl. Terusan Karang Tineung Indah No 66 Sukajadi Kota Bandung",
+        whatsapp: "628132030024",
+        mapsUrl: "https://maps.app.goo.gl/6JV2JZzgiV7ZhWZN8?g_st=awb",
+        pricelistUrl: "https://drive.google.com/file/d/1WsNG6zFxUc6IJoYTvK62kLC_hnDI9ZG0/view?usp=sharing",
+        photo: "/images/cabang-setrasari.png"
     }
 ];
 const registrations = [
